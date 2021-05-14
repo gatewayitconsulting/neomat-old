@@ -4,7 +4,7 @@ import { makeStyles } from "@material-ui/core/styles";
 // core components
 
 // Styles
-import bannerStyles from "../styles/bannerStyles.js";
+import bannerStyles from "../../styles/bannerStyles.js";
 
 const useStyles = makeStyles(bannerStyles);
 

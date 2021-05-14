@@ -5,7 +5,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import Typography from "@material-ui/core/Typography";
 
 // Styles
-import mockCopyStyles from "../styles/mockCopyStyles.js";
+import mockCopyStyles from "../../styles/mockCopyStyles.js";
 
 const useStyles = makeStyles(mockCopyStyles);
 
