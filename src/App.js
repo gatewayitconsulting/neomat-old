@@ -18,6 +18,8 @@ import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
 import { makeStyles, useTheme } from "@material-ui/core/styles";
 import { Switch, Route, Link, BrowserRouter } from "react-router-dom";
+import BannerSection from "./sections/banner";
+import MockCopySection from "./sections/mockCopy";
 
 const drawerWidth = 240;
 
@@ -46,7 +48,8 @@ const useStyles = makeStyles(theme => ({
   toolbar: theme.mixins.toolbar,
   drawerPaper: {
     width: drawerWidth,
-    borderRadius: "3px"
+    borderRadius: "3px",
+    overflowX: "hidden"
   },
   drawerHeader: {
     display: 'flex',
@@ -166,7 +169,7 @@ function App(props) {
         <main className={classes.content}>
           <div className={classes.toolbar} />
           <Switch>
-            <Route exact path="/" render={() => <div>Home Page</div>} />
+            <Route exact path="/" component={MockCopySection} />
             <Route path="/Inbox" render={() => <div> Page inbox</div>} />
             <Route path="/Starred" render={() => <div>Page starred</div>} />
           </Switch>

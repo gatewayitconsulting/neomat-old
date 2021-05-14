@@ -2,18 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import { BrowserRouter, Switch, Route } from "react-router-dom";
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
-  <BrowserRouter>
-      <Switch>
-        <Route exact path="/"><App /></Route>
-        {/* <Route path="/category"><Category /></Route> */}
-        {/* <Route path="/products"><Products /></Route> */}
-        {/* <Route path="/*"><ErrorPage /></Route> */}
-      </Switch>
-    </BrowserRouter>,
+  <App />,
   document.getElementById("root")
 );
 
