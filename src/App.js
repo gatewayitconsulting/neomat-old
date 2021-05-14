@@ -45,7 +45,8 @@ const useStyles = makeStyles(theme => ({
   },
   toolbar: theme.mixins.toolbar,
   drawerPaper: {
-    width: drawerWidth
+    width: drawerWidth,
+    borderRadius: "3px"
   },
   drawerHeader: {
     display: 'flex',
@@ -61,9 +62,29 @@ const useStyles = makeStyles(theme => ({
   },
   justifyContentBetween: {
     justifyContent: 'space-between'
+  },
+  drawerBrand: {
+    textAlign: "center"
+  },
+  neoOpenMenu: {
+    borderRadius: "50px",
+    background: "linear-gradient(225deg, #3949a3, #4357c2)",
+    boxShadow: "-7px 7px 13px #36459a, 7px -7px 13px #485dd0"
+  },
+  neoCloseMenu: {
+    borderRadius: "50px",
+    background: "linear-gradient(225deg, #e6e6e6, #ffffff)",
+    boxShadow: "-7px 7px 14px #d9d9d9, 7px -7px 14px #ffffff"
+  },
+  neoNavLink: {
+    margin: "0.3em",
+    marginBottom: "1em",
+    borderRadius: "8px",
+    background: "ffffff",
+    boxShadow: "-6px 6px 12px #e6e6e6, 6px -6px 12px #ffffff",
+    
   }
 }));
-
 function App(props) {
   const { container } = props;
   const classes = useStyles();
@@ -80,11 +101,15 @@ function App(props) {
 
   const drawer = (
     <div>
-      <div className={classes.toolbar} />
+      <div className={classes.toolbar}>
+        <Typography variant="h6" noWrap className={classes.drawerBrand}>
+          neomat
+        </Typography>
+      </div>
       <Divider />
       <List>
         {["Inbox", "Starred"].map((text, index) => (
-          <ListItem key={text} component={Link} to={"/" + text}>
+          <ListItem key={text} component={Link} to={"/" + text} className={classes.neoNavLink}>
             <ListItemIcon>
               {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
             </ListItemIcon>
@@ -108,7 +133,7 @@ function App(props) {
             aria-label="open drawer"
             edge="end"
             onClick={handleDrawerOpen}
-            className={clsx(open && classes.hide)}
+            className={[clsx(open && classes.hide), classes.neoOpenMenu]}
           >
             <MenuIcon />
           </IconButton>
@@ -130,7 +155,7 @@ function App(props) {
               }}
             >
               <div className={classes.drawerHeader}>
-                <IconButton onClick={handleDrawerClose}>
+                <IconButton onClick={handleDrawerClose} className={classes.neoCloseMenu}>
                   <ChevronRightIcon/>
                 </IconButton>
               </div>
