@@ -35,11 +35,20 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-## Learn More
+## Learn about the dependencies 
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+To learn Material UI, check out the [documentation](https://material-ui.com/).
+
+To learn Neomorphism, check out this [article](https://medium.muz.li/neumorphic-design-ad5586796b1b).
+
+## Tools
+
+Some tools to help you get started with your own neomorphic and soft ui designs.
+[https://neumorphism.io/#e0e0e0](https://neumorphism.io/#e0e0e0)
 
 ### Deployment
 
