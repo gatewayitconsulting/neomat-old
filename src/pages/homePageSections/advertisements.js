@@ -18,7 +18,7 @@ const useStyles = makeStyles(mockCopyStyles);
 export default function MockCopySection() {
   const classes = useStyles();
   return (
-    <div className={classes.container} style={{ textAlign: "center" }}>
+    <div className={classes.container} style={{ textAlign: "center", marginTop: "2em", marginBottom: "2em" }}>
         <h1>About This Website</h1>
         <Typography paragraph style={{ fontSize: "1em" }}>
             This website was developed using ReactJS, JavaScript, Material Design, SASS, CSS, and HTML5. 

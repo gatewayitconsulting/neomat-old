@@ -461,6 +461,11 @@ const hexToRgb = input => {
     transition: "opacity .45s",
     opacity: "0"
   };
+
+  const contentSpacingNormal = {
+    marginTop: "2em",
+    marginBottom: "2em"
+  };
   
   export {
     //variables
@@ -528,6 +533,7 @@ const hexToRgb = input => {
     coloredShadow,
     customTitle,
     primaryColorPurple,
+    contentSpacingNormal,
     hexToRgb
   };
   

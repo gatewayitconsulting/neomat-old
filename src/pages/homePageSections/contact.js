@@ -22,7 +22,7 @@ export default function MockCopySection() {
   const classes = useStyles();
   const avatarSize = "200px";
   return (
-    <div className={classes.container} style={{ textAlign: "center" }}>
+    <div className={classes.container} style={{ textAlign: "center", marginTop: "2em", marginBottom: "2em" }}>
         <h1>Contact Me</h1>
         <Avatar 
             alt="John Montanye" 
