@@ -1,10 +1,14 @@
 import React from "react";
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
+
 // core components
 import Typography from "@material-ui/core/Typography";
 import Button from "@material-ui/core/Button";
 import Link from "@material-ui/core/Link";
+
+// icons
+import { Book, GitHub } from "@material-ui/icons";
 
 // Styles
 import mockCopyStyles from "../../styles/advertisementStyles.js";
@@ -21,7 +25,7 @@ export default function MockCopySection() {
             The different looking style is based off a design pattern I call neomat, which blends concepts 
             of Neumorphism and Material Design together. Check out the code for this website on Github below.
         </Typography>
-        <Button className={classes.buttonPrimary}>
+        <Button className={classes.buttonPrimary} startIcon={<GitHub/>} id="buttonIconGithub">
             <Link to="#" className={classes.buttonLink}>
                 Github
             </Link>
@@ -31,8 +35,8 @@ export default function MockCopySection() {
             Check out my professional guides on how to get more familiar with web development and software engineering 
             related paths.
         </Typography>
-        <Button className={classes.buttonPrimary}>
-            <Link to="#" className={classes.buttonLink}>
+        <Button className={classes.buttonPrimary} startIcon={<Book/>} id="buttonIconGuides">
+            <Link href="/Guides" className={classes.buttonLink}>
                 See guides
             </Link>
         </Button>

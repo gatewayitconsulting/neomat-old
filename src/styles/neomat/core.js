@@ -38,6 +38,7 @@ const hexToRgb = input => {
     "#e1bee7",
     "#ba68c8"
   ];
+  const primaryColorPurple = ["#42186d"];
   const secondaryColor = ["#fafafa"];
   const warningColor = [
     "#ff9800",
@@ -526,6 +527,7 @@ const hexToRgb = input => {
     btnLink,
     coloredShadow,
     customTitle,
+    primaryColorPurple,
     hexToRgb
   };
   

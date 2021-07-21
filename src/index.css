@@ -37,3 +37,15 @@ h6 {
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
+
+#buttonIconGithub > span > span > svg {
+  fill: white !important;
+}
+
+#buttonIconGuides > span > span > svg {
+  fill: white !important;
+}
+
+#buttonIconEmail > span > span > svg {
+  fill: white !important;
+}

@@ -7,9 +7,10 @@ import { makeStyles } from "@material-ui/core/styles";
 
 // sections of this Page
 import homePageStyles from "../styles/homePageStyles";
-import BannerSection from "./sections/banner.js";
-import AdvertisementSection from "./sections/advertisements.js";
-import ProjectsSection from "./sections/projects.js";
+import BannerSection from "./homePageSections/banner.js";
+import AdvertisementSection from "./homePageSections/advertisements.js";
+import ContactSection from "./homePageSections/contact.js";
+import ProjectsSection from "./homePageSections/projects.js";
 
 
 const useStyles = makeStyles(homePageStyles);
@@ -22,6 +23,7 @@ export default function HomePage() {
           <BannerSection />
           {/* <ProjectsSection /> */}
           <AdvertisementSection />
+          <ContactSection />
       </div>
     </div>
   );
