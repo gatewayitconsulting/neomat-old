@@ -16,10 +16,10 @@ const useStyles = makeStyles(homePageStyles);
 export default function HomePage() {
   const classes = useStyles();
   return (
-    <div>
+    <div className={classes.containerFluid}>
       <div className={classes.main}>
           <BannerSection />
-          <ProjectsSection />
+          {/* <ProjectsSection /> */}
       </div>
     </div>
   );

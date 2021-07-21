@@ -1,18 +1,13 @@
 import {
-    textCenter
+    main,
+    container,
+    containerFluid
 } from "./neomat/core.js";
 
 const homePageStyles = {
-    // main,
-    // mrAuto,
-    // mlAuto,
-    // container: {
-    //   ...container,
-    //   zIndex: 1
-    // },
-    // textCenter: {
-    //   textAlign: "center"
-    // }
+    main,
+    container,
+    containerFluid
 };
 
 export default homePageStyles;

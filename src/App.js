@@ -63,7 +63,7 @@ const useStyles = makeStyles(theme => ({
   },
   content: {
     flexGrow: 1,
-    padding: theme.spacing(3),
+    padding: 0,
     [theme.breakpoints.up("sm")]: {
       marginLeft: -drawerWidth
     }
@@ -111,12 +111,12 @@ function App(props) {
     <div>
       <div className={classes.toolbar}>
         <Typography variant="h6" noWrap className={classes.drawerBrand}>
-          neomat
+          JMDesigns
         </Typography>
       </div>
       <Divider />
       <List>
-        {["Projects", "Starred"].map((text, index) => (
+        {["Home", "Projects", "Starred"].map((text, index) => (
           <ListItem key={text} component={Link} to={"/" + text} className={classes.neoNavLink}>
             <ListItemIcon>
               {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
@@ -134,7 +134,7 @@ function App(props) {
       <AppBar position="fixed" className={classes.appBar}>
         <Toolbar className={classes.justifyContentBetween}>
           <Typography variant="h6" noWrap className={classes.typography}>
-            neomat
+            JMDesigns
           </Typography>
           <IconButton
             color="inherit"
@@ -174,7 +174,7 @@ function App(props) {
         <main className={classes.content}>
           <div className={classes.toolbar} />
           <Switch>
-            <Route exact path="/" component={MockCopySection} />
+            <Route exact path="/home" component={HomePage} />
             <Route path="/projects" component={HomePage} />
             <Route path="/Starred" render={() => <div>Page starred</div>} />
           </Switch>
