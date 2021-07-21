@@ -6,8 +6,10 @@ import Typography from "@material-ui/core/Typography";
 import Button from "@material-ui/core/Button";
 import Link from "@material-ui/core/Link";
 import Grid from '@material-ui/core/Grid';
-import Icon from '@material-ui/core/Icon';
+import { Avatar } from "@material-ui/core";
 
+// images
+import avatarImage from "../../assets/imgs/john.jpg";
 
 // Styles
 import mockCopyStyles from "../../styles/advertisementStyles.js";
@@ -18,14 +20,16 @@ const useStyles = makeStyles(mockCopyStyles);
 
 export default function MockCopySection() {
   const classes = useStyles();
-  const preventDefault = (event) => event.preventDefault();
+  const avatarSize = "200px";
   return (
     <div className={classes.container} style={{ textAlign: "center" }}>
         <h1>Contact Me</h1>
-        <div>
-            <p>Image</p>
-        </div>
-        <Grid container spacing={1} style={{ marginTop: "1em", marginBottom: "1em" }}>
+        <Avatar 
+            alt="John Montanye" 
+            src={avatarImage} 
+            style={{ height: avatarSize, width: avatarSize, marginLeft: "auto", marginRight: "auto" }} 
+        />
+        <Grid container spacing={1} style={{ marginTop: "2em", marginBottom: "2em" }}>
             <Grid item xs={12} sm={4}>
                 <Link href="https://www.linkedin.com/in/john-montanye/" target="_blank" rel="noopener">
                     <LinkedIn fontSize="large" style={{ display: "inline", verticalAlign: "middle" }} />

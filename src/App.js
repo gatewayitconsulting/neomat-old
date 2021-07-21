@@ -18,9 +18,9 @@ import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
 import { makeStyles, useTheme } from "@material-ui/core/styles";
 import { Switch, Route, Link, BrowserRouter } from "react-router-dom";
-import BannerSection from "./pages/sections/banner";
-import MockCopySection from "./pages/sections/mockCopy";
-import ProjectsSection from "./pages/sections/projects";
+import BannerSection from "./pages/homePageSections/banner";
+import MockCopySection from "./pages/homePageSections/mockCopy";
+import ProjectsSection from "./pages/homePageSections/projects";
 import HomePage from "./pages/homePage";
 
 const drawerWidth = 240;
