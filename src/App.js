@@ -37,6 +37,9 @@ const useStyles = makeStyles(theme => ({
   },
   appBar: {
     marginLeft: drawerWidth,
+    backgroundColor: "#42186d !important",
+    minHeight: "70px !important",
+    height: "70px !important",
     [theme.breakpoints.up("sm")]: {
       width: `calc(100% - ${drawerWidth}px)`
     }
@@ -76,8 +79,8 @@ const useStyles = makeStyles(theme => ({
   },
   neoOpenMenu: {
     borderRadius: "50px",
-    background: "linear-gradient(225deg, #3949a3, #4357c2)",
-    boxShadow: "-7px 7px 13px #36459a, 7px -7px 13px #485dd0"
+    background: "linear-gradient(225deg, #3b1662, #471a75)",
+    boxShadow: "-7px 7px 13px #38145d, 7px -7px 13px #4c1c7d"
   },
   neoCloseMenu: {
     borderRadius: "50px",
@@ -90,7 +93,7 @@ const useStyles = makeStyles(theme => ({
     borderRadius: "8px",
     background: "ffffff",
     boxShadow: "-6px 6px 12px #e6e6e6, 6px -6px 12px #ffffff",
-    
+    color: "#222"
   }
 }));
 function App(props) {
@@ -116,7 +119,7 @@ function App(props) {
       </div>
       <Divider />
       <List>
-        {["Home", "Projects", "Starred"].map((text, index) => (
+        {["Home", "Projects", "Guides"].map((text, index) => (
           <ListItem key={text} component={Link} to={"/" + text} className={classes.neoNavLink}>
             <ListItemIcon>
               {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
