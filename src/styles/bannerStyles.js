@@ -35,11 +35,10 @@ const bannerStyles = {
     }
   },
   bannerCopyInnerContainer: {
-    width: "auto",
     marginLeft: "-15px",
     marginRight: "-15px",
     justifyContent: "center",
-    width: "100%",
+    width: "auto",
     display: "flex",
     flexWrap: "wrap",
     boxSizing: "border-box"

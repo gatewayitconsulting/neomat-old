@@ -1,18 +1,18 @@
 import React from "react";
 // @material-ui/core components
-// import { makeStyles } from "@material-ui/core/styles";
+import { makeStyles } from "@material-ui/core/styles";
 // core components
 import Typography from "@material-ui/core/Typography";
 
 // Styles
-// import mockCopyStyles from "../../styles/mockCopyStyles.js";
+import mockCopyStyles from "../../styles/mockCopyStyles.js";
 
-// const useStyles = makeStyles(mockCopyStyles);
+const useStyles = makeStyles(mockCopyStyles);
 
 export default function MockCopySection() {
-//   const classes = useStyles();
+  const classes = useStyles();
   return (
-    <div>
+    <div className={classes.container}>
         <h1>Mock Copy</h1>
         <Typography paragraph>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt

@@ -408,15 +408,15 @@ const hexToRgb = input => {
       " 100%)"
   };
   
-  const sectionGray = {
-    backgroundColor: blackColor,
-    background:
-      "radial-gradient(ellipse at center," +
-      blackColor +
-      " 0," +
-      blackColor +
-      " 100%)"
-  };
+  // const sectionGray = {
+  //   backgroundColor: blackColor,
+  //   background:
+  //     "radial-gradient(ellipse at center," +
+  //     blackColor +
+  //     " 0," +
+  //     blackColor +
+  //     " 100%)"
+  // };
   
   const sectionDescription = {
     marginTop: "130px"
