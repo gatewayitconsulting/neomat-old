@@ -11,6 +11,7 @@ import BannerSection from "./homePageSections/banner.js";
 import AdvertisementSection from "./homePageSections/advertisements.js";
 import ContactSection from "./homePageSections/contact.js";
 import ProjectsSection from "./homePageSections/projects.js";
+import Footer from "./footer";
 
 
 const useStyles = makeStyles(homePageStyles);
@@ -24,6 +25,7 @@ export default function HomePage() {
           {/* <ProjectsSection /> */}
           <AdvertisementSection />
           <ContactSection />
+          <Footer />
       </div>
     </div>
   );
