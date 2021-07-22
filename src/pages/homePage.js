@@ -10,7 +10,6 @@ import homePageStyles from "../styles/homePageStyles";
 import BannerSection from "./homePageSections/banner.js";
 import AdvertisementSection from "./homePageSections/advertisements.js";
 import ContactSection from "./homePageSections/contact.js";
-import ProjectsSection from "./homePageSections/projects.js";
 import Footer from "./footer";
 
 
@@ -22,7 +21,6 @@ export default function HomePage() {
     <div className={classes.containerFluid}>
       <div className={classes.main}>
           <BannerSection />
-          {/* <ProjectsSection /> */}
           <AdvertisementSection />
           <ContactSection />
           <Footer />

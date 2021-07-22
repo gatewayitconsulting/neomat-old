@@ -16,11 +16,11 @@ import MailIcon from "@material-ui/icons/Mail";
 import MenuIcon from "@material-ui/icons/Menu";
 import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
-import { makeStyles, useTheme } from "@material-ui/core/styles";
+import { makeStyles } from "@material-ui/core/styles";
 import { Switch, Route, Link, BrowserRouter } from "react-router-dom";
-import BannerSection from "./pages/homePageSections/banner";
-import MockCopySection from "./pages/homePageSections/mockCopy";
-import ProjectsSection from "./pages/homePageSections/projects";
+// import BannerSection from "./pages/homePageSections/banner";
+// import MockCopySection from "./pages/homePageSections/mockCopy";
+// import ProjectsSection from "./pages/homePageSections/projects";
 import HomePage from "./pages/homePage";
 
 const drawerWidth = 240;
@@ -99,7 +99,7 @@ const useStyles = makeStyles(theme => ({
 function App(props) {
   const { container } = props;
   const classes = useStyles();
-  const theme = useTheme();
+  // const theme = useTheme();
   const [open, setOpen] = React.useState(false);
 
   const handleDrawerOpen = () => {
