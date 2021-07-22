@@ -22,15 +22,15 @@ export default function MockCopySection() {
         <div style={{ marginTop: "2em", marginBottom: "2em" }}>
             <h1>About This Website</h1>
             <Typography paragraph style={{ fontSize: "1em" }}>
-                This website was developed using ReactJS, JavaScript, Material Design, SASS, CSS, and HTML5. 
+                This website was developed using ReactJS, JavaScript, Material Design, CSS, and HTML5. 
                 The different looking style is based off a design pattern I call neomat, which blends concepts 
                 of Neumorphism and Material Design together. Check out the code for this website on Github below.
             </Typography>
-            <Button className={classes.buttonPrimary} startIcon={<GitHub/>} id="buttonIconGithub">
-                <Link to="#" className={classes.buttonLink}>
+            <Link href="#" target="_blank" rel="noopener">
+                <Button className={classes.buttonPrimary + " " + classes.buttonLink} startIcon={<GitHub/>} id="buttonIconGithub">
                     Github
-                </Link>
-            </Button>
+                </Button>
+            </Link>
         </div>
         <div style={{ marginTop: "2em", marginBottom: "2em" }}>
             <h1>Professional Guides</h1>
@@ -38,11 +38,11 @@ export default function MockCopySection() {
                 Check out my professional guides on how to get more familiar with web development and software engineering 
                 related paths.
             </Typography>
-            <Button className={classes.buttonPrimary} startIcon={<Book/>} id="buttonIconGuides">
-                <Link href="/Guides" className={classes.buttonLink}>
+            <Link href="/Guides">
+                <Button className={classes.buttonPrimary + " " + classes.buttonLink} startIcon={<Book/>} id="buttonIconGuides">
                     See guides
-                </Link>
-            </Button>
+                </Button>
+            </Link>
         </div>
     </div>
   );

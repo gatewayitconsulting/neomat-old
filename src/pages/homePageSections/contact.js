@@ -55,20 +55,20 @@ export default function MockCopySection() {
                 </Link>
             </Grid>
         </Grid>
-        <Link href="#" target="_blank" rel="noopener" download>
+        {/* <Link href="#" target="_blank" rel="noopener" download>
             <Description fontSize="large" style={{ display: "inline", verticalAlign: "middle" }} />
             <span style={{ color: primaryColorPurple, display: "inline", verticalAlign: "middle" }}>
                 Resume
             </span>
-        </Link>
+        </Link> */}
         <Typography paragraph style={{ fontSize: "1em", fontStyle: "italic", marginTop: "1em" }}>
             *References available upon request
         </Typography>
-        <Button className={classes.buttonPrimary} startIcon={<Email/>} id="buttonIconGuides">
-            <Link href="mailto:jmontanye24@gmail.com" target="_blank" rel="noopener" className={classes.buttonLink}>
+        <Link href="mailto:jmontanye24@gmail.com" target="_blank" rel="noopener">
+            <Button className={classes.buttonPrimary + " " + classes.buttonLink} startIcon={<Email/>} id="buttonIconGuides">
                 Email me
-            </Link>
-        </Button>
+            </Button>
+        </Link>
     </div>
   );
 }
