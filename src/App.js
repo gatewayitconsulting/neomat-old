@@ -17,7 +17,7 @@ import MenuIcon from "@material-ui/icons/Menu";
 import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
-import { Switch, Route, Link, BrowserRouter } from "react-router-dom";
+import { Switch, Route, Link, BrowserRouter, Redirect } from "react-router-dom";
 import HomePage from "./pages/homePage";
 import GuidesPage from "./pages/guidesPage";
 
@@ -134,9 +134,11 @@ function App(props) {
       <CssBaseline />
       <AppBar position="fixed" className={classes.appBar}>
         <Toolbar className={classes.justifyContentBetween}>
-          <Typography variant="h6" noWrap className={classes.typography}>
-            JMDesigns
-          </Typography>
+          <a href="/Home" style={{ textDecoration: "none", color: "#FFF", fontSize: "1.25rem", lineHeight: "1.6" }}>
+            <Typography variant="h6" noWrap className={classes.typography}>
+              JMDesigns
+            </Typography>
+          </a>
           <IconButton
             color="inherit"
             aria-label="open drawer"
@@ -178,6 +180,7 @@ function App(props) {
             <Route exact path="/home" component={HomePage} />
             {/* <Route path="/projects" component={HomePage} /> */}
             <Route path="/Guides" component={GuidesPage} />
+            <Redirect from="/" to="/home"/>
           </Switch>
         </main>
       </BrowserRouter>

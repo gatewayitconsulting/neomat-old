@@ -35,7 +35,7 @@ export default function MockCopySection() {
         <div style={{ marginTop: "2em", marginBottom: "2em" }}>
             <h1>Professional Guides</h1>
             <Typography paragraph>
-                Check out my professional guides on how to get more familiar with web development and software engineering 
+                Check out my professional guides on how to get more familiar with website development and software engineering 
                 related paths.
             </Typography>
             <Link href="/Guides">

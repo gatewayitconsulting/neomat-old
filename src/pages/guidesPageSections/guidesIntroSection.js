@@ -20,10 +20,10 @@ export default function GuidesIntroSection() {
         <Grid container spacing={1} style={{ marginTop: "2em", marginBottom: "2em" }}>
             <Grid item xs={12}>
                 <p>
-                Have you ever had interest in website development or software engineering but are having trouble 
-                figuring out how to get into the field? These guides are made so that someone can figure out exactly 
-                what skills are used often in the professional world and see the information, books, and courses that 
-                will help them acquire a good understanding, quickly.
+                  Have you ever had interest in website development or software engineering but are having trouble 
+                  figuring out how to get into the field? These guides are made so that someone can figure out exactly 
+                  what skills are used often in the professional world and see the information, books, and courses that 
+                  will help them acquire a good understanding, quickly.
                 </p>
             </Grid>
         </Grid>
