@@ -14,7 +14,7 @@ import avatarImage from "../../assets/imgs/john.jpg";
 // Styles
 import mockCopyStyles from "../../styles/advertisementStyles.js";
 import { primaryColorPurple } from "../../styles/neomat/core.js";
-import { LinkedIn, Email, LocationOn, PhoneIphone, Description } from "@material-ui/icons";
+import { LinkedIn, Email, LocationOn, LaptopMac, Description } from "@material-ui/icons";
 
 const useStyles = makeStyles(mockCopyStyles);
 
@@ -47,10 +47,10 @@ export default function MockCopySection() {
                 </Link>
             </Grid>
             <Grid item xs={12} sm={4}>
-                <Link href="tel:3145789037" target="_blank" rel="noopener">
-                    <PhoneIphone fontSize="large" style={{ display: "inline", verticalAlign: "middle" }} />
+                <Link href="https://www.gatewayitconsulting.com/contact-us" target="_blank" rel="noopener">
+                    <LaptopMac fontSize="large" style={{ display: "inline", verticalAlign: "middle" }} />
                     <span style={{ color: primaryColorPurple, display: "inline", verticalAlign: "middle" }}>
-                        314-578-9037
+                        Business Inquiries
                     </span>
                 </Link>
             </Grid>

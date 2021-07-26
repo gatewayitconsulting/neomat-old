@@ -18,10 +18,8 @@ import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
 import { Switch, Route, Link, BrowserRouter } from "react-router-dom";
-// import BannerSection from "./pages/homePageSections/banner";
-// import MockCopySection from "./pages/homePageSections/mockCopy";
-// import ProjectsSection from "./pages/homePageSections/projects";
 import HomePage from "./pages/homePage";
+import GuidesPage from "./pages/guidesPage";
 
 const drawerWidth = 240;
 
@@ -119,8 +117,8 @@ function App(props) {
       </div>
       <Divider />
       <List>
-        {["Home", "Projects", "Guides"].map((text, index) => (
-          <ListItem key={text} component={Link} to={"/" + text} className={classes.neoNavLink}>
+        {["Home", "Guides"].map((text, index) => (
+          <ListItem key={text} component={Link} to={"/" + text} className={classes.neoNavLink} onClick={handleDrawerClose}>
             <ListItemIcon>
               {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
             </ListItemIcon>
@@ -178,8 +176,8 @@ function App(props) {
           <div className={classes.toolbar} />
           <Switch>
             <Route exact path="/home" component={HomePage} />
-            <Route path="/projects" component={HomePage} />
-            <Route path="/Starred" render={() => <div>Page starred</div>} />
+            {/* <Route path="/projects" component={HomePage} /> */}
+            <Route path="/Guides" component={GuidesPage} />
           </Switch>
         </main>
       </BrowserRouter>
