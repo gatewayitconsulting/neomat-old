@@ -26,7 +26,7 @@ export default function MockCopySection() {
                 The different looking style is based off a design pattern I call neomat, which blends concepts 
                 of Neumorphism and Material Design together. Check out the code for this website on Github below.
             </Typography>
-            <Link href="#" target="_blank" rel="noopener">
+            <Link href="https://github.com/gatewayitconsulting/neomat" title="See code on Github" target="_blank" rel="noopener">
                 <Button className={classes.buttonPrimary + " " + classes.buttonLink} startIcon={<GitHub/>} id="buttonIconGithub">
                     Github
                 </Button>
