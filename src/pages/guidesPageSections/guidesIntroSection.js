@@ -2,9 +2,6 @@ import React from "react";
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
 // core components
-import Typography from "@material-ui/core/Typography";
-import Button from "@material-ui/core/Button";
-import Link from "@material-ui/core/Link";
 import Grid from '@material-ui/core/Grid';
 
 // Styles

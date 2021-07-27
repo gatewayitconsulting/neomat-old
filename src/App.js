@@ -100,12 +100,18 @@ function App(props) {
   // const theme = useTheme();
   const [open, setOpen] = React.useState(false);
 
+  const scrollToTop = () => {
+    window.scrollTo(0, 0);
+    document.body.scrollTop = 0;
+  };
+
   const handleDrawerOpen = () => {
     setOpen(true);
   };
 
   const handleDrawerClose = () => {
     setOpen(false);
+    scrollToTop();
   };
 
   const drawer = (
@@ -118,7 +124,14 @@ function App(props) {
       <Divider />
       <List>
         {["Home", "Guides"].map((text, index) => (
-          <ListItem key={text} component={Link} to={"/" + text} className={classes.neoNavLink} onClick={handleDrawerClose}>
+          <ListItem 
+            key={text}
+            component={Link}
+            to={"/" + text}
+            className={classes.neoNavLink}
+            onClick={handleDrawerClose}
+            aria-label={"Navigate to the " + text + " page"}
+          >
             <ListItemIcon>
               {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
             </ListItemIcon>
@@ -134,14 +147,17 @@ function App(props) {
       <CssBaseline />
       <AppBar position="fixed" className={classes.appBar}>
         <Toolbar className={classes.justifyContentBetween}>
-          <a href="/Home" style={{ textDecoration: "none", color: "#FFF", fontSize: "1.25rem", lineHeight: "1.6" }}>
-            <Typography variant="h6" noWrap className={classes.typography}>
+          <a 
+            href="/Home"
+            style={{ textDecoration: "none", color: "#FFF", fontSize: "1.25rem", lineHeight: "1.6" }}
+          >
+            <Typography variant="h6" noWrap className={classes.typography} aria-label="Navigate to home page">
               JMDesigns
             </Typography>
           </a>
           <IconButton
             color="inherit"
-            aria-label="open drawer"
+            aria-label="Open menu"
             edge="end"
             onClick={handleDrawerOpen}
             className={[clsx(open && classes.hide), classes.neoOpenMenu]}
@@ -166,7 +182,7 @@ function App(props) {
               }}
             >
               <div className={classes.drawerHeader}>
-                <IconButton onClick={handleDrawerClose} className={classes.neoCloseMenu}>
+                <IconButton onClick={handleDrawerClose} className={classes.neoCloseMenu} aria-label="Close menu">
                   <ChevronRightIcon/>
                 </IconButton>
               </div>

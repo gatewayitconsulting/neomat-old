@@ -12,11 +12,11 @@ import { Avatar } from "@material-ui/core";
 import avatarImage from "../../assets/imgs/john.jpg";
 
 // Styles
-import mockCopyStyles from "../../styles/advertisementStyles.js";
 import { primaryColorPurple } from "../../styles/neomat/core.js";
-import { LinkedIn, Email, LocationOn, LaptopMac, Description } from "@material-ui/icons";
+import { LinkedIn, Email, LocationOn, LaptopMac } from "@material-ui/icons";
+import homePageStyles from "../../styles/advertisementStyles.js";
 
-const useStyles = makeStyles(mockCopyStyles);
+const useStyles = makeStyles(homePageStyles);
 
 export default function MockCopySection() {
   const classes = useStyles();
@@ -27,7 +27,13 @@ export default function MockCopySection() {
         <Avatar 
             alt="John Montanye" 
             src={avatarImage} 
-            style={{ height: avatarSize, width: avatarSize, marginLeft: "auto", marginRight: "auto" }} 
+            style={{ 
+                height: avatarSize,
+                width: avatarSize,
+                marginLeft: "auto",
+                marginRight: "auto",
+                boxShadow: "0px 13px 27px -5px #32325D, 0px 8px 16px -8px #222"
+            }}
         />
         <Grid container spacing={1} style={{ marginTop: "2em", marginBottom: "2em" }}>
             <Grid item xs={12} sm={4}>

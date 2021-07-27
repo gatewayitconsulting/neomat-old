@@ -26,8 +26,18 @@ export default function MockCopySection() {
                 The different looking style is based off a design pattern I call neomat, which blends concepts 
                 of Neumorphism and Material Design together. Check out the code for this website on Github below.
             </Typography>
-            <Link href="https://github.com/gatewayitconsulting/neomat" title="See code on Github" target="_blank" rel="noopener">
-                <Button className={classes.buttonPrimary + " " + classes.buttonLink} startIcon={<GitHub/>} id="buttonIconGithub">
+            <Link
+                href="https://github.com/gatewayitconsulting/neomat"
+                title="See code on Github"
+                target="_blank"
+                rel="noopener"
+            >
+                <Button
+                    className={classes.buttonPrimary + " " + classes.buttonLink}
+                    startIcon={<GitHub/>}
+                    id="buttonIconGithub"
+                    aria-label="See code on Github"
+                >
                     Github
                 </Button>
             </Link>
@@ -35,11 +45,16 @@ export default function MockCopySection() {
         <div style={{ marginTop: "2em", marginBottom: "2em" }}>
             <h1>Professional Guides</h1>
             <Typography paragraph>
-                Check out my professional guides on how to get more familiar with website development and software engineering 
-                related paths.
+                Check out my professional guides on how to get more familiar with website development 
+                and software engineering related paths.
             </Typography>
-            <Link href="/Guides">
-                <Button className={classes.buttonPrimary + " " + classes.buttonLink} startIcon={<Book/>} id="buttonIconGuides">
+            <Link href="/Guides" title="See guides">
+                <Button
+                    className={classes.buttonPrimary + " " + classes.buttonLink}
+                    startIcon={<Book/>}
+                    id="buttonIconGuides"
+                    aria-label="See guides"
+                >
                     See guides
                 </Button>
             </Link>
