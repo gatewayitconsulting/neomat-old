@@ -11,9 +11,12 @@ const homePageStyles = {
     buttonPrimary: {
         borderWidth: "1px",
         padding: "11px 23px !important",
-        backgroundColor: "#42186e !important",
+        backgroundColor: "#000 !important",
         borderRadius: "50px !important",
-        margin: "1em"
+        margin: "1em",
+        "&:hover": {
+            backgroundColor: "#222 !important"
+        }
     },
     buttonLink: {
         color: "white !important",

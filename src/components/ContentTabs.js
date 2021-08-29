@@ -102,7 +102,7 @@ export default function ContentTabs(props) {
 
 ContentTabs.defaultProps = {
   active: 0,
-  color: "primary"
+  color: "dark"
 };
 
 ContentTabs.propTypes = {

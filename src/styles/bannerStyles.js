@@ -18,7 +18,7 @@ const bannerStyles = {
     zIndex: "1",
     marginLeft: "auto",
     marginRight: "auto",
-    paddingTop: "15rem",
+    paddingTop: "7rem",
     paddingLeft: "15px",
     paddingRight: "15px",
     "@media (min-width: 576px)": {

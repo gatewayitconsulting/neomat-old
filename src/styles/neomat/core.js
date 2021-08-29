@@ -334,7 +334,8 @@ const hexToRgb = input => {
 
   const customTitle = {
       ...title,
-      marginTop: "0"
+      marginTop: "0",
+      textAlign: "center"
   }
   
   const link = {

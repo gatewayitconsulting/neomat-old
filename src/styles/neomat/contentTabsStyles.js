@@ -15,7 +15,7 @@ import {
       overflow: "visible !important"
     },
     flexContainer: {
-      [theme.breakpoints.down("xs")]: {
+      "@media (min-width: 576px)": {
         display: "flex !important",
         flexWrap: "wrap !important"
       }
@@ -47,7 +47,11 @@ import {
       lineHeight: "24px !important",
       textTransform: "uppercase !important",
       fontSize: "12px !important",
-      fontWeight: "500 !important"
+      fontWeight: "500 !important",
+      "&:hover": {
+        backgroundColor: blackColor + " !important",
+        color: whiteColor + " !important"
+      }
     },
     tabIcon: {
       width: "30px !important",
@@ -94,14 +98,16 @@ import {
       }
     },
     dark: {
-      color: whiteColor + " !important",
-      backgroundColor: blackColor + " !important",
-      background:
-        "radial-gradient(ellipse at center," +
-        blackColor +
-        " 0," +
-        blackColor +
-        " 100%) !important"
+      "&,&:hover": {
+        color: whiteColor + " !important",
+        backgroundColor: blackColor + " !important",
+        background:
+          "radial-gradient(ellipse at center," +
+          blackColor +
+          " 0," +
+          blackColor +
+          " 100%) !important"
+      }
     },
     alignCenter: {
       alignItems: "center !important",

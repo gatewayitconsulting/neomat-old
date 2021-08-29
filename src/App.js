@@ -35,7 +35,7 @@ const useStyles = makeStyles(theme => ({
   },
   appBar: {
     marginLeft: drawerWidth,
-    backgroundColor: "#42186d !important",
+    backgroundColor: "#222 !important",
     minHeight: "70px !important",
     height: "70px !important",
     [theme.breakpoints.up("sm")]: {
@@ -77,8 +77,8 @@ const useStyles = makeStyles(theme => ({
   },
   neoOpenMenu: {
     borderRadius: "50px",
-    background: "linear-gradient(225deg, #3b1662, #471a75)",
-    boxShadow: "-7px 7px 13px #38145d, 7px -7px 13px #4c1c7d"
+    background: "linear-gradient(225deg, #1f1f1f, #242424)",
+    boxShadow: "-7px 7px 13px #1d1d1d, 7px -7px 13px #272727"
   },
   neoCloseMenu: {
     borderRadius: "50px",

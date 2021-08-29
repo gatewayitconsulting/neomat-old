@@ -12,7 +12,7 @@ import { Avatar } from "@material-ui/core";
 import avatarImage from "../../assets/imgs/john.jpg";
 
 // Styles
-import { primaryColorPurple } from "../../styles/neomat/core.js";
+import { blackColor } from "../../styles/neomat/core.js";
 import { LinkedIn, Email, LocationOn, LaptopMac } from "@material-ui/icons";
 import homePageStyles from "../../styles/advertisementStyles.js";
 
@@ -37,14 +37,14 @@ export default function MockCopySection() {
         />
         <Grid container spacing={1} style={{ marginTop: "2em", marginBottom: "2em" }}>
             <Grid item xs={12} sm={4}>
-                <Link href="https://www.linkedin.com/in/john-montanye/" target="_blank" rel="noopener">
+                <Link href="https://www.linkedin.com/in/john-montanye/" target="_blank" rel="noopener" style={{ color: "#222" }}>
                     <LinkedIn
                         fontSize="large"
                         style={{ display: "inline", verticalAlign: "middle" }}
                         className={classes.hoverSecondary}
                     />
                     <span
-                        style={{ color: primaryColorPurple, display: "inline", verticalAlign: "middle" }}
+                        style={{ color: blackColor, display: "inline", verticalAlign: "middle" }}
                         className={classes.hoverSecondary}
                     >
                         LinkedIn
@@ -52,14 +52,14 @@ export default function MockCopySection() {
                 </Link>
             </Grid>
             <Grid item xs={12} sm={4}>
-                <Link href="https://goo.gl/maps/4yb3nLeBr8TwYhwT7" target="_blank" rel="noopener">
+                <Link href="https://goo.gl/maps/4yb3nLeBr8TwYhwT7" target="_blank" rel="noopener" style={{ color: "#222" }}>
                     <LocationOn
                         fontSize="large"
                         style={{ display: "inline", verticalAlign: "middle" }}
                         className={classes.hoverSecondary}
                     />
                     <span
-                        style={{ color: primaryColorPurple, display: "inline", verticalAlign: "middle" }}
+                        style={{ color: blackColor, display: "inline", verticalAlign: "middle" }}
                         className={classes.hoverSecondary}
                     >
                         Edwardsville, IL
@@ -67,14 +67,14 @@ export default function MockCopySection() {
                 </Link>
             </Grid>
             <Grid item xs={12} sm={4}>
-                <Link href="https://www.gatewayitconsulting.com/contact-us" target="_blank" rel="noopener">
+                <Link href="https://www.gatewayitconsulting.com/contact-us" target="_blank" rel="noopener" style={{ color: "#222" }}>
                     <LaptopMac
                         fontSize="large"
                         style={{ display: "inline", verticalAlign: "middle" }}
                         className={classes.hoverSecondary}
                     />
                     <span
-                        style={{ color: primaryColorPurple, display: "inline", verticalAlign: "middle" }}
+                        style={{ color: blackColor, display: "inline", verticalAlign: "middle" }}
                         className={classes.hoverSecondary}
                     >
                         Business Inquiries
@@ -84,7 +84,7 @@ export default function MockCopySection() {
         </Grid>
         {/* <Link href="#" target="_blank" rel="noopener" download>
             <Description fontSize="large" style={{ display: "inline", verticalAlign: "middle" }} />
-            <span style={{ color: primaryColorPurple, display: "inline", verticalAlign: "middle" }}>
+            <span style={{ color: blackColor, display: "inline", verticalAlign: "middle" }}>
                 Resume
             </span>
         </Link> */}

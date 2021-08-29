@@ -4,7 +4,7 @@ import { makeStyles } from "@material-ui/core/styles";
 // core components
 
 // images
-import bannerImage from "../../assets/imgs/banner.jpg";
+import bannerImage from "../../assets/imgs/banner.jpeg";
 // Styles
 import bannerStyles from "../../styles/bannerStyles.js";
 
@@ -20,7 +20,7 @@ export default function BannerSection() {
         <div className={classes.bannerCopyInnerContainer}>
           <div className={classes.bannerCopyInnerContainerWrapper}>
             <h1 className={classes.customTitle}>
-              John Montanye, creative <br/> &amp; web developer.
+              John Montanye, creative <br/> &amp; software engineer.
             </h1>
           </div>
         </div>
