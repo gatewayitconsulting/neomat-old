@@ -38,24 +38,45 @@ export default function MockCopySection() {
         <Grid container spacing={1} style={{ marginTop: "2em", marginBottom: "2em" }}>
             <Grid item xs={12} sm={4}>
                 <Link href="https://www.linkedin.com/in/john-montanye/" target="_blank" rel="noopener">
-                    <LinkedIn fontSize="large" style={{ display: "inline", verticalAlign: "middle" }} />
-                    <span style={{ color: primaryColorPurple, display: "inline", verticalAlign: "middle" }}>
+                    <LinkedIn
+                        fontSize="large"
+                        style={{ display: "inline", verticalAlign: "middle" }}
+                        className={classes.hoverSecondary}
+                    />
+                    <span
+                        style={{ color: primaryColorPurple, display: "inline", verticalAlign: "middle" }}
+                        className={classes.hoverSecondary}
+                    >
                         LinkedIn
                     </span>
                 </Link>
             </Grid>
             <Grid item xs={12} sm={4}>
                 <Link href="https://goo.gl/maps/4yb3nLeBr8TwYhwT7" target="_blank" rel="noopener">
-                    <LocationOn fontSize="large" style={{ display: "inline", verticalAlign: "middle" }} />
-                    <span style={{ color: primaryColorPurple, display: "inline", verticalAlign: "middle" }}>
+                    <LocationOn
+                        fontSize="large"
+                        style={{ display: "inline", verticalAlign: "middle" }}
+                        className={classes.hoverSecondary}
+                    />
+                    <span
+                        style={{ color: primaryColorPurple, display: "inline", verticalAlign: "middle" }}
+                        className={classes.hoverSecondary}
+                    >
                         Edwardsville, IL
                     </span>
                 </Link>
             </Grid>
             <Grid item xs={12} sm={4}>
                 <Link href="https://www.gatewayitconsulting.com/contact-us" target="_blank" rel="noopener">
-                    <LaptopMac fontSize="large" style={{ display: "inline", verticalAlign: "middle" }} />
-                    <span style={{ color: primaryColorPurple, display: "inline", verticalAlign: "middle" }}>
+                    <LaptopMac
+                        fontSize="large"
+                        style={{ display: "inline", verticalAlign: "middle" }}
+                        className={classes.hoverSecondary}
+                    />
+                    <span
+                        style={{ color: primaryColorPurple, display: "inline", verticalAlign: "middle" }}
+                        className={classes.hoverSecondary}
+                    >
                         Business Inquiries
                     </span>
                 </Link>

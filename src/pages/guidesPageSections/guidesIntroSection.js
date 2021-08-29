@@ -3,6 +3,7 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 // core components
 import Grid from '@material-ui/core/Grid';
+import ContentTabs from "../../components/ContentTabs.js";
 
 // Styles
 import guidesPageStyles from "../../styles/guidesPageStyles.js";
@@ -22,6 +23,29 @@ export default function GuidesIntroSection() {
                   what skills are used often in the professional world and see the information, books, and courses that 
                   will help them acquire a good understanding, quickly.
                 </p>
+            </Grid>
+            <Grid item xs={12}>
+              <ContentTabs
+                alignCenter
+                tabs={[
+                  {
+                    tabButton: "All",
+                    tabContent: ""
+                  },
+                  {
+                    tabButton: "Developer",
+                    tabContent: ""
+                  },
+                  {
+                    tabButton: "Agile",
+                    tabContent: ""
+                  },
+                  {
+                    tabButton: "Low Hanging",
+                    tabContent: ""
+                  }
+                ]}
+              />
             </Grid>
         </Grid>
     </div>
