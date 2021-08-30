@@ -1,0 +1,348 @@
+[
+    {
+        "key": "1",
+        "index": 0,
+        "lastUpdated": "08/29/2021",
+        "tag": "Developer",
+        "image": "./assets/imgs/entry-developer.jpeg",
+        "imageAlt": "Learn how to become a developer",
+        "title": "Want to become a website developer?",
+        "skipText": "Take me to the skills I need",
+        "introCopy": [
+            "To become a website developer, you must understand the basic building blocks that make up a website and how they function. Skills you must learn include HTML5, CSS, and JavaScript.",
+            "Responsive Design will make your website look good no matter the screen size and should always be a priority when you are developing any website or app.",
+            "SASS is a coding language that makes CSS easier to use and more reusable which will save you time from the get go when developing websites and apps.",
+            "Bootstrap and Material Design are two different design frameworks that include prebuilt HTML elements and designs for those elements so that you can write less code and get your web app up and running quicker."
+        ],
+        "niceToHaves": [
+            "The Agile Methodology, which defines how you will be planning, designing, and developing websites in your daily career. It will also define how to communicate with teams that interface with websites and application projects.",
+            "Git & Version Control will help you organize code and avoid coding errors when working with more than one person on a project.",
+            "ReactJS, Angular, and VueJS are JavaScript libraries and frameworks (in case of Angular) that are similar to SASS in that they include several pre-built JavaScript functionalities that make developing easier and quicker. These libraries are highly prized in recruiting for jobs.",
+            "NPM is a package manager tool that is essential to installing several of the libraries and frameworks discussed above. It is often used in a CLI format that can be worked by entering different commands to achieve different results."
+        ],
+        "skillsMust": [
+            {
+                "id": 0,
+                "name": "HTML5",
+                "linkText": "Get Started",
+                "link": "https://www.w3schools.com/html/html_intro.asp",
+                "altText": "Get started with HTML5"
+            },
+            {
+                "id": 1,
+                "name": "CSS3",
+                "linkText": "Get Started",
+                "link": "https://www.w3schools.com/css/css_intro.asp",
+                "altText": "Get started with CSS3"
+            },
+            {
+                "id": 2,
+                "name": "SASS",
+                "linkText": "Get Started",
+                "link": "https://sass-lang.com/guide",
+                "altText": "Get started with SASS"
+            },
+            {
+                "id": 3,
+                "name": "Responsive Design",
+                "linkText": "Get Started",
+                "link": "https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design",
+                "altText": "Get started with responsive design"
+            },
+            {
+                "id": 4,
+                "name": "JavaScript",
+                "linkText": "Get Started",
+                "link": "https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/A_first_splash",
+                "altText": "Get started with JavaScript"
+            },
+            {
+                "id": 5,
+                "name": "Bootstrap",
+                "linkText": "Get Started",
+                "link": "https://getbootstrap.com/docs/5.0/getting-started/introduction/",
+                "altText": "Get started with Bootstrap"
+            },
+            {
+                "id": 6,
+                "name": "Material Design",
+                "linkText": "Get Started",
+                "link": "https://material.io/design/introduction",
+                "altText": "Get started with Material Design"
+            }
+        ],
+        "skillsNice": [
+            {
+                "id": 0,
+                "name": "Agile Methodology",
+                "linkText": "Get Started",
+                "link": "https://medium.com/shecancode/an-introduction-to-agile-software-development-914339dcec66",
+                "altText": "Get started with Agile methodology"
+            },
+            {
+                "id": 1,
+                "name": "Git & Version Control",
+                "linkText": "Get Started",
+                "link": "https://www.atlassian.com/git/tutorials/what-is-version-control",
+                "altText": "Get started with Git & version control"
+            },
+            {
+                "id": 2,
+                "name": "ReactJS",
+                "linkText": "Get Started",
+                "link": "https://reactjs.org/tutorial/tutorial.html",
+                "altText": "Get started with ReactJS"
+            },
+            {
+                "id": 3,
+                "name": "Angular",
+                "linkText": "Get Started",
+                "link": "https://angular.io/guide/what-is-angular",
+                "altText": "Get started with Angular"
+            },
+            {
+                "id": 4,
+                "name": "VueJS",
+                "linkText": "Get Started",
+                "link": "https://vuejs.org/v2/guide/",
+                "altText": "Get started with VueJS"
+            },
+            {
+                "id": 5,
+                "name": "NPM & Node.JS",
+                "linkText": "Get Started",
+                "link": "https://docs.npmjs.com/downloading-and-installing-node-js-and-npm",
+                "altText": "Get started with NPM & Node.JS"
+            }
+        ],
+        "books": [
+            {
+                "id": 0,
+                "name": "Web Design with HTML, CSS, JavaScript and jQuery Set by Jon Duckett",
+                "linkText": "Buy Web Design with HTML, CSS, JavaScript and jQuery Set by Jon Duckett",
+                "link": "https://www.amazon.com/Web-Design-HTML-JavaScript-jQuery/dp/1118907442/",
+                "altText": "Buy Web Design with HTML, CSS, JavaScript and jQuery Set by Jon Duckett"
+            },
+            {
+                "id": 1,
+                "name": "The Pragmatic Programmer: Your Journey To Mastery by David Thomas and Andrew Hunt",
+                "linkText": "Buy The Pragmatic Programmer: Your Journey To Mastery by David Thomas and Andrew Hunt",
+                "link": "https://www.amazon.com/Pragmatic-Programmer-journey-mastery-Anniversary-dp-0135957052/dp/0135957052/",
+                "altText": "Buy The Pragmatic Programmer: Your Journey To Mastery by David Thomas and Andrew Hunt"
+            },
+            {
+                "id": 2,
+                "name": "The Scrum Guide by Ken Schwaber and Jeff Sutherland",
+                "linkText": "Buy The Scrum Guide by Ken Schwaber and Jeff Sutherland",
+                "link": "https://www.scrum.org/resources/scrum-guide",
+                "altText": "Buy The Scrum Guide by Ken Schwaber and Jeff Sutherland"
+            }
+        ],
+        "bootcamps": [
+            {
+                "id": 0,
+                "name": "Coding Bootcamp Online by Brainstation",
+                "linkText": "Take the Coding Bootcamp Online by Brainstation",
+                "link": "https://brainstation.io/course/online/remote-web-development-bootcamp",
+                "altText": "Take the Coding Bootcamp Online by Brainstation"
+            },
+            {
+                "id": 1,
+                "name": "Software Engineering Bootcamp by Thinkful",
+                "linkText": "Take the Software Engineering Bootcamp by Thinkful",
+                "link": "https://www.thinkful.com/bootcamp/web-development/#introduction",
+                "altText": "Take the Software Engineering Bootcamp by Thinkful"
+            }
+        ],
+        "courses": [
+            {
+                "id": 0,
+                "name": "JavaScript30 (free)",
+                "linkText": "Take the JavaScript30 (free) course",
+                "link": "https://javascript30.com/",
+                "altText": "Take the JavaScript30 (free) course"
+            },
+            {
+                "id": 1,
+                "name": "The Complete JavaScript Course 2021 by udemy",
+                "linkText": "Take the Complete JavaScript Course 2021 by udemy",
+                "link": "https://www.udemy.com/course/the-complete-javascript-course/",
+                "altText": "Take the Complete JavaScript Course 2021 by udemy"
+            }
+        ],
+        "nextSteps": "The next step of your journey to becoming a website developer is to learn about APIs and how to consume them to show data in your application. Another guide is coming soon that will talk about how to create one and what else you need to know to work with APIs."
+    },
+    {
+        "key": "2",
+        "index": 1,
+        "lastUpdated": "08/29/2021",
+        "tag": "Agile",
+        "image": "./assets/imgs/entry-developer.jpeg",
+        "imageAlt": "Contemplating developer",
+        "title": "Want to become a website developer?",
+        "skipText": "Take me to the skills I need",
+        "introCopy": [
+            "To become a website developer, you must understand the basic building blocks that make up a website and how they function. Skills you must learn include HTML5, CSS, and JavaScript.",
+            "Responsive Design will make your website look good no matter the screen size and should always be a priority when you are developing any website or app.",
+            "SASS is a coding language that makes CSS easier to use and more reusable which will save you time from the get go when developing websites and apps.",
+            "Bootstrap and Material Design are two different design frameworks that include prebuilt HTML elements and designs for those elements so that you can write less code and get your web app up and running quicker."
+        ],
+        "niceToHaves": [
+            "The Agile Methodology, which defines how you will be planning, designing, and developing websites in your daily career. It will also define how to communicate with teams that interface with websites and application projects.",
+            "Git & Version Control will help you organize code and avoid coding errors when working with more than one person on a project.",
+            "ReactJS, Angular, and VueJS are JavaScript libraries and frameworks (in case of Angular) that are similar to SASS in that they include several pre-built JavaScript functionalities that make developing easier and quicker. These libraries are highly prized in recruiting for jobs.",
+            "NPM is a package manager tool that is essential to installing several of the libraries and frameworks discussed above. It is often used in a CLI format that can be worked by entering different commands to achieve different results."
+        ],
+        "skillsMust": [
+            {
+                "id": 0,
+                "name": "HTML5",
+                "linkText": "Get Started",
+                "link": "https://www.w3schools.com/html/html_intro.asp",
+                "altText": "Get started with HTML5"
+            },
+            {
+                "id": 1,
+                "name": "CSS3",
+                "linkText": "Get Started",
+                "link": "https://www.w3schools.com/css/css_intro.asp",
+                "altText": "Get started with CSS3"
+            },
+            {
+                "id": 2,
+                "name": "SASS",
+                "linkText": "Get Started",
+                "link": "https://sass-lang.com/guide",
+                "altText": "Get started with SASS"
+            },
+            {
+                "id": 3,
+                "name": "Responsive Design",
+                "linkText": "Get Started",
+                "link": "https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design",
+                "altText": "Get started with responsive design"
+            },
+            {
+                "id": 4,
+                "name": "JavaScript",
+                "linkText": "Get Started",
+                "link": "https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/A_first_splash",
+                "altText": "Get started with JavaScript"
+            },
+            {
+                "id": 5,
+                "name": "Bootstrap",
+                "linkText": "Get Started",
+                "link": "https://getbootstrap.com/docs/5.0/getting-started/introduction/",
+                "altText": "Get started with Bootstrap"
+            },
+            {
+                "id": 6,
+                "name": "Material Design",
+                "linkText": "Get Started",
+                "link": "https://material.io/design/introduction",
+                "altText": "Get started with Material Design"
+            }
+        ],
+        "skillsNice": [
+            {
+                "id": 0,
+                "name": "Agile Methodology",
+                "linkText": "Get Started",
+                "link": "https://medium.com/shecancode/an-introduction-to-agile-software-development-914339dcec66",
+                "altText": "Get started with Agile methodology"
+            },
+            {
+                "id": 1,
+                "name": "Git & Version Control",
+                "linkText": "Get Started",
+                "link": "https://www.atlassian.com/git/tutorials/what-is-version-control",
+                "altText": "Get started with Git & version control"
+            },
+            {
+                "id": 2,
+                "name": "ReactJS",
+                "linkText": "Get Started",
+                "link": "https://reactjs.org/tutorial/tutorial.html",
+                "altText": "Get started with ReactJS"
+            },
+            {
+                "id": 3,
+                "name": "Angular",
+                "linkText": "Get Started",
+                "link": "https://angular.io/guide/what-is-angular",
+                "altText": "Get started with Angular"
+            },
+            {
+                "id": 4,
+                "name": "VueJS",
+                "linkText": "Get Started",
+                "link": "https://vuejs.org/v2/guide/",
+                "altText": "Get started with VueJS"
+            },
+            {
+                "id": 5,
+                "name": "NPM & Node.JS",
+                "linkText": "Get Started",
+                "link": "https://docs.npmjs.com/downloading-and-installing-node-js-and-npm",
+                "altText": "Get started with NPM & Node.JS"
+            }
+        ],
+        "books": [
+            {
+                "id": 0,
+                "name": "Web Design with HTML, CSS, JavaScript and jQuery Set by Jon Duckett",
+                "linkText": "Buy Web Design with HTML, CSS, JavaScript and jQuery Set by Jon Duckett",
+                "link": "https://www.amazon.com/Web-Design-HTML-JavaScript-jQuery/dp/1118907442/",
+                "altText": "Buy Web Design with HTML, CSS, JavaScript and jQuery Set by Jon Duckett"
+            },
+            {
+                "id": 1,
+                "name": "The Pragmatic Programmer: Your Journey To Mastery by David Thomas and Andrew Hunt",
+                "linkText": "Buy The Pragmatic Programmer: Your Journey To Mastery by David Thomas and Andrew Hunt",
+                "link": "https://www.amazon.com/Pragmatic-Programmer-journey-mastery-Anniversary-dp-0135957052/dp/0135957052/",
+                "altText": "Buy The Pragmatic Programmer: Your Journey To Mastery by David Thomas and Andrew Hunt"
+            },
+            {
+                "id": 2,
+                "name": "The Scrum Guide by Ken Schwaber and Jeff Sutherland",
+                "linkText": "Buy The Scrum Guide by Ken Schwaber and Jeff Sutherland",
+                "link": "https://www.scrum.org/resources/scrum-guide",
+                "altText": "Buy The Scrum Guide by Ken Schwaber and Jeff Sutherland"
+            }
+        ],
+        "bootcamps": [
+            {
+                "id": 0,
+                "name": "Coding Bootcamp Online by Brainstation",
+                "linkText": "Take the Coding Bootcamp Online by Brainstation",
+                "link": "https://brainstation.io/course/online/remote-web-development-bootcamp",
+                "altText": "Take the Coding Bootcamp Online by Brainstation"
+            },
+            {
+                "id": 1,
+                "name": "Software Engineering Bootcamp by Thinkful",
+                "linkText": "Take the Software Engineering Bootcamp by Thinkful",
+                "link": "https://www.thinkful.com/bootcamp/web-development/#introduction",
+                "altText": "Take the Software Engineering Bootcamp by Thinkful"
+            }
+        ],
+        "courses": [
+            {
+                "id": 0,
+                "name": "JavaScript30 (free)",
+                "linkText": "Take the JavaScript30 (free) course",
+                "link": "https://javascript30.com/",
+                "altText": "Take the JavaScript30 (free) course"
+            },
+            {
+                "id": 1,
+                "name": "The Complete JavaScript Course 2021 by udemy",
+                "linkText": "Take the Complete JavaScript Course 2021 by udemy",
+                "link": "https://www.udemy.com/course/the-complete-javascript-course/",
+                "altText": "Take the Complete JavaScript Course 2021 by udemy"
+            }
+        ],
+        "nextSteps": "The next step of your journey to becoming a website developer is to learn about APIs and how to consume them to show data in your application. Another guide is coming soon that will talk about how to create one and what else you need to know to work with APIs."
+    }
+]

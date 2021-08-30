@@ -26,6 +26,25 @@ const guidesPageStyles = {
         paddingLeft: "0",
         textAlign: "left",
         listStyle: "none"
+    },
+    media: {
+        height: 400,
+    },
+    buttonPrimary: {
+        borderWidth: "1px",
+        padding: "11px 23px !important",
+        backgroundColor: "#000 !important",
+        borderRadius: "5px !important",
+        marginTop: "1em !important",
+        marginBottom: "1em !important",
+        marginLeft: "1em !important",
+        "&:hover": {
+            backgroundColor: "#222 !important"
+        }
+    },
+    buttonLink: {
+        color: "white !important",
+        textDecoration: "none !important"
     }
 };
 

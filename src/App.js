@@ -20,6 +20,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import { Switch, Route, Link, BrowserRouter, Redirect } from "react-router-dom";
 import HomePage from "./pages/homePage";
 import GuidesPage from "./pages/guidesPage";
+import GuidePage from "./pages/guidePage";
 
 const drawerWidth = 240;
 
@@ -195,6 +196,7 @@ function App(props) {
           <Switch>
             <Route exact path="/home" component={HomePage} />
             {/* <Route path="/projects" component={HomePage} /> */}
+            <Route path="/Guides/:key" component={GuidePage} />
             <Route path="/Guides" component={GuidesPage} />
             <Redirect from="/" to="/home"/>
           </Switch>
