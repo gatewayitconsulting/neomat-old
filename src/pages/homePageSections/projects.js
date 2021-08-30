@@ -10,7 +10,6 @@ import Typography from "@material-ui/core/Typography";
 import Grid from '@material-ui/core/Grid';
 // Styles
 import projectsStyles from "../../styles/projectsStyles.js";
-// import { textCenter } from "../../styles/neomat/core.js";
 
 const useStyles = makeStyles(projectsStyles);
 

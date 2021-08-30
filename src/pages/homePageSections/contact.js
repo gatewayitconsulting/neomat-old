@@ -14,11 +14,11 @@ import avatarImage from "../../assets/imgs/john.jpg";
 // Styles
 import { blackColor } from "../../styles/neomat/core.js";
 import { LinkedIn, Email, LocationOn, LaptopMac } from "@material-ui/icons";
-import homePageStyles from "../../styles/advertisementStyles.js";
+import contactStyles from "../../styles/advertisementStyles.js";
 
-const useStyles = makeStyles(homePageStyles);
+const useStyles = makeStyles(contactStyles);
 
-export default function MockCopySection() {
+export default function ContactSectionSection() {
   const classes = useStyles();
   const avatarSize = "200px";
   return (

@@ -11,9 +11,9 @@ import Link from "@material-ui/core/Link";
 import { Book, GitHub } from "@material-ui/icons";
 
 // Styles
-import mockCopyStyles from "../../styles/advertisementStyles.js";
+import advertisementStyles from "../../styles/advertisementStyles.js";
 
-const useStyles = makeStyles(mockCopyStyles);
+const useStyles = makeStyles(advertisementStyles);
 
 export default function MockCopySection() {
   const classes = useStyles();

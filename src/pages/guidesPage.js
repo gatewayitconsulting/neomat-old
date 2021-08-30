@@ -6,11 +6,12 @@ import { makeStyles } from "@material-ui/core/styles";
 // core components
 
 // sections of this Page
-import homePageStyles from "../styles/homePageStyles";
 import Footer from "./footer";
 import GuidesIntroSection from "./guidesPageSections/guidesIntroSection";
 import GuidesMainSection from "./guidesPageSections/guidesMainSection";
 
+// styles
+import homePageStyles from "../styles/homePageStyles";
 
 const useStyles = makeStyles(homePageStyles);
 
