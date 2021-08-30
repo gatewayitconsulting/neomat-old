@@ -12,13 +12,13 @@ import { Avatar } from "@material-ui/core";
 import avatarImage from "../../assets/imgs/john.jpg";
 
 // Styles
-import { blackColor } from "../../styles/neomat/core.js";
+import { whiteColor } from "../../styles/neomat/core.js";
 import { LinkedIn, Email, LocationOn, LaptopMac } from "@material-ui/icons";
 import contactStyles from "../../styles/advertisementStyles.js";
 
 const useStyles = makeStyles(contactStyles);
 
-export default function ContactSectionSection() {
+export default function ContactSection() {
   const classes = useStyles();
   const avatarSize = "200px";
   return (
@@ -32,19 +32,19 @@ export default function ContactSectionSection() {
                 width: avatarSize,
                 marginLeft: "auto",
                 marginRight: "auto",
-                boxShadow: "0px 13px 27px -5px #32325D, 0px 8px 16px -8px #222"
+                boxShadow: "0px 13px 27px -5px #000, 0px 8px 16px -8px #222"
             }}
         />
         <Grid container spacing={1} style={{ marginTop: "2em", marginBottom: "2em" }}>
             <Grid item xs={12} sm={4}>
-                <Link href="https://www.linkedin.com/in/john-montanye/" target="_blank" rel="noopener" style={{ color: "#222" }}>
+                <Link href="https://www.linkedin.com/in/john-montanye/" target="_blank" rel="noopener" style={{ color: "#FFF" }}>
                     <LinkedIn
                         fontSize="large"
                         style={{ display: "inline", verticalAlign: "middle" }}
                         className={classes.hoverSecondary}
                     />
                     <span
-                        style={{ color: blackColor, display: "inline", verticalAlign: "middle" }}
+                        style={{ color: whiteColor, display: "inline", verticalAlign: "middle" }}
                         className={classes.hoverSecondary}
                     >
                         LinkedIn
@@ -52,14 +52,14 @@ export default function ContactSectionSection() {
                 </Link>
             </Grid>
             <Grid item xs={12} sm={4}>
-                <Link href="https://goo.gl/maps/4yb3nLeBr8TwYhwT7" target="_blank" rel="noopener" style={{ color: "#222" }}>
+                <Link href="https://goo.gl/maps/4yb3nLeBr8TwYhwT7" target="_blank" rel="noopener" style={{ color: "#FFF" }}>
                     <LocationOn
                         fontSize="large"
                         style={{ display: "inline", verticalAlign: "middle" }}
                         className={classes.hoverSecondary}
                     />
                     <span
-                        style={{ color: blackColor, display: "inline", verticalAlign: "middle" }}
+                        style={{ color: whiteColor, display: "inline", verticalAlign: "middle" }}
                         className={classes.hoverSecondary}
                     >
                         Edwardsville, IL
@@ -67,14 +67,14 @@ export default function ContactSectionSection() {
                 </Link>
             </Grid>
             <Grid item xs={12} sm={4}>
-                <Link href="https://www.gatewayitconsulting.com/contact-us" target="_blank" rel="noopener" style={{ color: "#222" }}>
+                <Link href="https://www.gatewayitconsulting.com/contact-us" target="_blank" rel="noopener" style={{ color: "#FFF" }}>
                     <LaptopMac
                         fontSize="large"
                         style={{ display: "inline", verticalAlign: "middle" }}
                         className={classes.hoverSecondary}
                     />
                     <span
-                        style={{ color: blackColor, display: "inline", verticalAlign: "middle" }}
+                        style={{ color: whiteColor, display: "inline", verticalAlign: "middle" }}
                         className={classes.hoverSecondary}
                     >
                         Business Inquiries
@@ -84,7 +84,7 @@ export default function ContactSectionSection() {
         </Grid>
         {/* <Link href="#" target="_blank" rel="noopener" download>
             <Description fontSize="large" style={{ display: "inline", verticalAlign: "middle" }} />
-            <span style={{ color: blackColor, display: "inline", verticalAlign: "middle" }}>
+            <span style={{ color: whiteColor, display: "inline", verticalAlign: "middle" }}>
                 Resume
             </span>
         </Link> */}

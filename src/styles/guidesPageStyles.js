@@ -33,13 +33,15 @@ const guidesPageStyles = {
     buttonPrimary: {
         borderWidth: "1px",
         padding: "11px 23px !important",
-        backgroundColor: "#000 !important",
+        backgroundColor: "#222 !important",
         borderRadius: "5px !important",
         marginTop: "1em !important",
         marginBottom: "1em !important",
         marginLeft: "1em !important",
+        boxShadow: "rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px !important",
         "&:hover": {
-            backgroundColor: "#222 !important"
+            backgroundColor: "#222 !important",
+            opacity: ".8 !important"
         }
     },
     buttonLink: {

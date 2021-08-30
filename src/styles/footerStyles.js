@@ -10,7 +10,14 @@ const footerStyles = {
     containerFluid,
     footer: {
         backgroundColor: "#222",
-        color: "#FFF"
+        color: "#FFF",
+        borderTop: "1px solid #000"
+    },
+    buttonPrimary: {
+        boxShadow: "none",
+        "&:hover": {
+            backgroundColor: "#222 !important"
+        }
     }
 };
 

@@ -5,7 +5,10 @@ import {
 } from "./neomat/core.js";
 
 const homePageStyles = {
-    main,
+    main: {
+        backgroundColor: "#222",
+        color: "#FFF"
+    },
     container,
     containerFluid
 };

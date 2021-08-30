@@ -15,7 +15,7 @@ import advertisementStyles from "../../styles/advertisementStyles.js";
 
 const useStyles = makeStyles(advertisementStyles);
 
-export default function MockCopySection() {
+export default function AdvertisementsSection() {
   const classes = useStyles();
   return (
     <div className={classes.container} style={{ textAlign: "center", marginTop: "2em", marginBottom: "2em" }}>

@@ -68,7 +68,8 @@ const useStyles = makeStyles(theme => ({
     padding: 0,
     [theme.breakpoints.up("sm")]: {
       marginLeft: -drawerWidth
-    }
+    },
+    backgroundColor: "#222"
   },
   justifyContentBetween: {
     justifyContent: 'space-between'

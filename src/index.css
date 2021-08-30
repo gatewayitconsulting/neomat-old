@@ -63,10 +63,22 @@ button {
 }
 
 button:hover {
-  background-color: #5b2198 !important;
+  background-color: #222 !important;
+  opacity: .8 !important;
+}
+
+.MuiCard-root {
+  background-color: #222 !important;
+  color: #FFF !important;
+  opacity: .8 !important;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px !important;
+}
+
+.MuiCard-root p	{
+  color: #FFF !important;
 }
 
 .MuiCardActionArea-root:hover {
-  background-color: #FFF !important;
+  background-color: #222 !important;
   opacity: .8 !important;
 }
