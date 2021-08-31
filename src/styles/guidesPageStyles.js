@@ -1,11 +1,13 @@
 import {
-    main,
     container,
     containerFluid
 } from "./neomat/core.js";
 
 const guidesPageStyles = {
-    main,
+    main: {
+        backgroundColor: "#222",
+        color: "#FFF"
+    },
     container,
     containerFluid,
     guideHeader: {

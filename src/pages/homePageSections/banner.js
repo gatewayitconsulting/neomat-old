@@ -4,24 +4,25 @@ import { makeStyles } from "@material-ui/core/styles";
 // core components
 
 // images
-import bannerImage from "../../assets/imgs/banner.jpeg";
+import bannerImage from "../../assets/imgs/banner.jpg";
 // Styles
 import bannerStyles from "../../styles/bannerStyles.js";
+import { Typography } from "@material-ui/core";
 
 const useStyles = makeStyles(bannerStyles);
 
 export default function BannerSection() {
   const classes = useStyles();
   return (
-    <div className={classes.bannerStyle} style={{ 
+    <div className={classes.bannerStyle} style={{
       backgroundImage: `url(${bannerImage})`,
     }}>
       <div className={classes.bannerCopyContainer}>
         <div className={classes.bannerCopyInnerContainer}>
           <div className={classes.bannerCopyInnerContainerWrapper}>
-            <h1 className={classes.customTitle}>
-              John Montanye, creative <br/> &amp; software engineer.
-            </h1>
+            <Typography variant="h4" className={classes.customTitle}>
+              John Montanye, creative <br /> &amp; software engineer.
+            </Typography>
           </div>
         </div>
       </div>

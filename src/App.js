@@ -197,8 +197,8 @@ function App(props) {
           <Switch>
             <Route exact path="/home" component={HomePage} />
             {/* <Route path="/projects" component={HomePage} /> */}
-            <Route path="/Guides/:key" component={GuidePage} />
-            <Route path="/Guides" component={GuidesPage} />
+            <Route path="/guides/become-a-developer" component={GuidePage} />
+            <Route path="/guides" component={GuidesPage} />
             <Redirect from="/" to="/home"/>
           </Switch>
         </main>

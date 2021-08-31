@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
+// import React, { useState, useEffect } from 'react';
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
 // core components
@@ -21,28 +22,28 @@ const useStyles = makeStyles(guidesPageStyles);
 export default function GuidesMainSection() {
     const classes = useStyles();
 
-    const [data, setData] = useState([]);
-    const getData = () => {
-        fetch('data.json'
-            , {
-                headers: {
-                    'Content-Type': 'application/json',
-                    'Accept': 'application/json'
-                }
-            }
-        )
-            .then(function (response) {
-                console.log(response)
-                return response.json();
-            })
-            .then(function (myJson) {
-                console.log(myJson);
-                setData(myJson)
-            });
-    }
-    useEffect(() => {
-        getData()
-    }, []);
+    // const [data, setData] = useState([]);
+    // const getData = () => {
+    //     fetch('data.json'
+    //         , {
+    //             headers: {
+    //                 'Content-Type': 'application/json',
+    //                 'Accept': 'application/json'
+    //             }
+    //         }
+    //     )
+    //         .then(function (response) {
+    //             console.log(response)
+    //             return response.json();
+    //         })
+    //         .then(function (myJson) {
+    //             console.log(myJson);
+    //             setData(myJson)
+    //         });
+    // }
+    // useEffect(() => {
+    //     getData()
+    // }, []);
 
     //   const Guide = data.map(item =>
     //     <div>
@@ -115,42 +116,38 @@ export default function GuidesMainSection() {
         <div className={classes.container} style={{ marginTop: "2em", marginBottom: "2em" }}>
             <Grid container spacing={1} style={{ marginTop: "2em", marginBottom: "2em" }}>
                 <Grid item xs={12}>
-                    {data.map(item => {
-                        return (
-                            <div key={item.key}>
-                                <Card className={classes.root} style={{ marginTop: "1em", marginBottom: "1em" }}>
-                                    <CardActionArea href={`/Guides/${item.key}`}>
-                                        <CardMedia
-                                            className={classes.media}
-                                            image={item.image}
-                                            title={item.imageAlt}
-                                        />
-                                        <CardContent style={{ marginLeft: "1em", marginRight: "1em" }}>
-                                            <Typography gutterBottom variant="h5" component="h2">
-                                                {item.title}
-                                            </Typography>
-                                            <Typography variant="body2" color="textSecondary" component="p">
-                                                {item.introCopy[0]}
-                                            </Typography>
-                                        </CardContent>
-                                    </CardActionArea>
-                                    <CardActions>
-                                        <Button
-                                            className={classes.buttonPrimary + " " + classes.buttonLink}
-                                            id="buttonIconGithub"
-                                            aria-label="Read More"
-                                            href={`/Guides/${item.key}`}
-                                        >
-                                            Read More
-                                        </Button>
-                                        <p style={{ marginLeft: "1em", fontSize: ".9em" }}>
-                                            Last updated: {item.lastUpdated}
-                                        </p>
-                                    </CardActions>
-                                </Card>
-                            </div>
-                        )
-                    })}
+                    <div>
+                        <Card className={classes.root} style={{ marginTop: "1em", marginBottom: "1em" }}>
+                            <CardActionArea href={`guides/become-a-developer`}>
+                                <CardMedia
+                                    className={classes.media}
+                                    image="./assets/imgs/entry-developer.jpg"
+                                    title="Learn how to become a developer"
+                                />
+                                <CardContent style={{ marginLeft: "1em", marginRight: "1em" }}>
+                                    <Typography gutterBottom variant="h5" component="h2">
+                                        Want to become a website developer?
+                                    </Typography>
+                                    <Typography variant="body2" color="textSecondary" component="p">
+                                        To become a website developer, you must understand the basic building blocks that make up a website and how they function. Skills you must learn include HTML5, CSS, and JavaScript.
+                                    </Typography>
+                                </CardContent>
+                            </CardActionArea>
+                            <CardActions>
+                                <Button
+                                    className={classes.buttonPrimary + " " + classes.buttonLink}
+                                    id="buttonIconGithub"
+                                    aria-label="Read More"
+                                    href={`guides/become-a-developer`}
+                                >
+                                    Read More
+                                </Button>
+                                <p style={{ marginLeft: "1em", fontSize: ".9em" }}>
+                                    Last updated: 08/29/2021
+                                </p>
+                            </CardActions>
+                        </Card>
+                    </div>
                 </Grid>
             </Grid>
         </div>

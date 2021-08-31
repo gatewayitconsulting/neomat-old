@@ -3,7 +3,10 @@ import {
 } from "../styles/neomat/core.js";
   
 const bannerStyles = {
-  customTitle,
+  customTitle: {
+    flex: "0 0 100%",
+    textAlign: "center"
+  },
   bannerStyle: {
     transform: "translate3d(0px, 0px, 0px)",
     backgroundSize: 'cover',
@@ -37,18 +40,21 @@ const bannerStyles = {
   bannerCopyInnerContainer: {
     marginLeft: "-15px",
     marginRight: "-15px",
-    justifyContent: "center",
+    // justifyContent: "center",
     width: "auto",
     display: "flex",
-    flexWrap: "wrap",
+    // flexWrap: "wrap",
     boxSizing: "border-box"
   },
   bannerCopyInnerContainerWrapper: {
-    textAlign: "left",
-    marginLeft: "auto",
-    marginRight: "auto",
+    // textAlign: "left",
+    // marginLeft: "auto",
+    // marginRight: "auto",
     width: "100%",
     position: "relative",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
     minHeight: "1px",
     paddingLeft: "15px",
     paddingRight: "15px"
