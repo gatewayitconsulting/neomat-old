@@ -1,5 +1,4 @@
 import {
-    main,
     container,
     containerFluid
 } from "./neomat/core.js";

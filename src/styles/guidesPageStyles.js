@@ -9,7 +9,7 @@ const guidesPageStyles = {
     container,
     containerFluid,
     guideHeader: {
-        backgroundImage: "linear-gradient(to right bottom, #f67a54, #dd4f5f, #b62c6a, #831970, #42186e)",
+        backgroundImage: "linear-gradient(to right bottom, #ffffff, #f8f8f8, #f1f1f1, #ebebeb, #e4e4e4)",
         WebkitBackgroundClip: "text",
         WebkitTextFillColor: "transparent"
     },
