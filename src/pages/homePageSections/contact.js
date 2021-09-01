@@ -11,9 +11,11 @@ import { Avatar } from "@material-ui/core";
 // images
 import avatarImage from "../../assets/imgs/john.jpg";
 
+// icons
+import { LinkedIn, Email, LocationOn, LaptopMac } from "@material-ui/icons";
+
 // Styles
 import { whiteColor } from "../../styles/neomat/core.js";
-import { LinkedIn, Email, LocationOn, LaptopMac } from "@material-ui/icons";
 import contactStyles from "../../styles/advertisementStyles.js";
 
 const useStyles = makeStyles(contactStyles);
@@ -40,11 +42,11 @@ export default function ContactSection() {
                 <Link href="https://www.linkedin.com/in/john-montanye/" target="_blank" rel="noopener" style={{ color: "#FFF" }}>
                     <LinkedIn
                         fontSize="large"
-                        style={{ display: "inline", verticalAlign: "middle" }}
+                        style={{ display: "inline", verticalAlign: "middle", marginRight: ".2em" }}
                         className={classes.hoverSecondary}
                     />
                     <span
-                        style={{ color: whiteColor, display: "inline", verticalAlign: "middle" }}
+                        style={{ color: whiteColor, display: "inline", verticalAlign: "middle", boxShadow: "0px 13px 27px -5px #000, 0px 8px 16px -8px #222" }}
                         className={classes.hoverSecondary}
                     >
                         LinkedIn
@@ -55,11 +57,11 @@ export default function ContactSection() {
                 <Link href="https://goo.gl/maps/4yb3nLeBr8TwYhwT7" target="_blank" rel="noopener" style={{ color: "#FFF" }}>
                     <LocationOn
                         fontSize="large"
-                        style={{ display: "inline", verticalAlign: "middle" }}
+                        style={{ display: "inline", verticalAlign: "middle", marginRight: ".2em" }}
                         className={classes.hoverSecondary}
                     />
                     <span
-                        style={{ color: whiteColor, display: "inline", verticalAlign: "middle" }}
+                        style={{ color: whiteColor, display: "inline", verticalAlign: "middle", boxShadow: "0px 13px 27px -5px #000, 0px 8px 16px -8px #222" }}
                         className={classes.hoverSecondary}
                     >
                         Edwardsville, IL
@@ -70,11 +72,11 @@ export default function ContactSection() {
                 <Link href="https://www.gatewayitconsulting.com/contact-us" target="_blank" rel="noopener" style={{ color: "#FFF" }}>
                     <LaptopMac
                         fontSize="large"
-                        style={{ display: "inline", verticalAlign: "middle" }}
+                        style={{ display: "inline", verticalAlign: "middle", marginRight: ".2em" }}
                         className={classes.hoverSecondary}
                     />
                     <span
-                        style={{ color: whiteColor, display: "inline", verticalAlign: "middle" }}
+                        style={{ color: whiteColor, display: "inline", verticalAlign: "middle", boxShadow: "0px 13px 27px -5px #000, 0px 8px 16px -8px #222" }}
                         className={classes.hoverSecondary}
                     >
                         Business Inquiries
@@ -82,12 +84,6 @@ export default function ContactSection() {
                 </Link>
             </Grid>
         </Grid>
-        {/* <Link href="#" target="_blank" rel="noopener" download>
-            <Description fontSize="large" style={{ display: "inline", verticalAlign: "middle" }} />
-            <span style={{ color: whiteColor, display: "inline", verticalAlign: "middle" }}>
-                Resume
-            </span>
-        </Link> */}
         <Typography paragraph style={{ fontSize: "1em", fontStyle: "italic", marginTop: "1em" }}>
             *References available upon request
         </Typography>

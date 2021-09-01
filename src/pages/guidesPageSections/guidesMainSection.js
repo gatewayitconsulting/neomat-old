@@ -13,6 +13,8 @@ import { Typography } from "@material-ui/core";
 import { Button } from "@material-ui/core";
 // import ContentTabs from "../../components/ContentTabs.js";
 
+import guideImage from "../../assets/imgs/entry-developer.jpg";
+
 // Styles
 import guidesPageStyles from "../../styles/guidesPageStyles.js";
 // import { render } from '@testing-library/react';
@@ -121,7 +123,7 @@ export default function GuidesMainSection() {
                             <CardActionArea href={`guides/become-a-developer`}>
                                 <CardMedia
                                     className={classes.media}
-                                    image="./assets/imgs/entry-developer.jpg"
+                                    image={guideImage}
                                     title="Learn how to become a developer"
                                 />
                                 <CardContent style={{ marginLeft: "1em", marginRight: "1em" }}>

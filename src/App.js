@@ -20,7 +20,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import { Switch, Route, Link, BrowserRouter, Redirect } from "react-router-dom";
 import HomePage from "./pages/homePage";
 import GuidesPage from "./pages/guidesPage";
-import GuidePage from "./pages/guidePage";
+import BecomeDeveloperGuide from "./pages/mockGuides/becomeDeveloperGuide";
 
 const drawerWidth = 240;
 
@@ -197,7 +197,7 @@ function App(props) {
           <Switch>
             <Route exact path="/home" component={HomePage} />
             {/* <Route path="/projects" component={HomePage} /> */}
-            <Route path="/guides/become-a-developer" component={GuidePage} />
+            <Route path="/guides/become-a-developer" component={BecomeDeveloperGuide} />
             <Route path="/guides" component={GuidesPage} />
             <Redirect from="/" to="/home"/>
           </Switch>

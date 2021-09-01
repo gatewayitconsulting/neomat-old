@@ -24,7 +24,8 @@ export default function AdvertisementsSection() {
             <Typography paragraph style={{ fontSize: "1em" }}>
                 This website was developed using ReactJS, JavaScript, Material Design, CSS, and HTML5. 
                 The different looking style is based off a design pattern I call neomat, which blends concepts 
-                of Neumorphism and Material Design together. Check out the code for this website on Github below.
+                of Neumorphism and Material Design together. The design emphasis was to create a "texturized"
+                feel to the website. Check out the code for this website on Github below.
             </Typography>
             <Link
                 href="https://github.com/gatewayitconsulting/neomat"
@@ -45,8 +46,8 @@ export default function AdvertisementsSection() {
         <div style={{ marginTop: "2em", marginBottom: "2em" }}>
             <h1>Professional Guides</h1>
             <Typography paragraph>
-                Check out my professional guides on how to get more familiar with website development 
-                and software engineering related paths.
+                Check out my guides on getting more familiar with website development 
+                and software engineering related paths and concepts.
             </Typography>
             <Link href="/Guides" title="See guides">
                 <Button

@@ -18,13 +18,9 @@ export default function BannerSection() {
       backgroundImage: `url(${bannerImage})`,
     }}>
       <div className={classes.bannerCopyContainer}>
-        <div className={classes.bannerCopyInnerContainer}>
-          <div className={classes.bannerCopyInnerContainerWrapper}>
-            <Typography variant="h4" className={classes.customTitle}>
-              John Montanye, creative <br /> &amp; software engineer.
-            </Typography>
-          </div>
-        </div>
+        <Typography variant="h3" className={classes.customTitle}>
+          John Montanye, creative <br /> &amp; software engineer.
+        </Typography>
       </div>
     </div>
   );

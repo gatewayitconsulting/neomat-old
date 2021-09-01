@@ -324,17 +324,12 @@ const hexToRgb = input => {
   
   const title = {
     color: whiteColor,
-    textDecoration: "none",
     fontWeight: "500",
-    marginTop: "30px",
-    marginBottom: "25px",
-    minHeight: "32px",
     fontFamily: `"Roboto","Helvetica","Arial",sans-serif`
   };
 
   const customTitle = {
       ...title,
-      marginTop: "0",
       textAlign: "center"
   }
   
