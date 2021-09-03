@@ -21,6 +21,7 @@ import { Switch, Route, Link, BrowserRouter, Redirect } from "react-router-dom";
 import HomePage from "./pages/homePage";
 import GuidesPage from "./pages/guidesPage";
 import BecomeDeveloperGuide from "./pages/mockGuides/becomeDeveloperGuide";
+import SkillsPage from "./pages/skillsPage";
 
 const drawerWidth = 240;
 
@@ -125,14 +126,14 @@ function App(props) {
       </div>
       <Divider />
       <List>
-        {["Home", "Guides"].map((text, index) => (
+        {["Home", "Skills", "Guides"].map((text, index) => (
           <ListItem 
             key={text}
             component={Link}
-            to={"/" + text}
+            to={"/" + text.toLocaleLowerCase()}
             className={classes.neoNavLink}
             onClick={handleDrawerClose}
-            aria-label={"Navigate to the " + text + " page"}
+            aria-label={"Navigate to the " + text.toLocaleLowerCase() + " page"}
           >
             <ListItemIcon>
               {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
@@ -199,6 +200,7 @@ function App(props) {
             {/* <Route path="/projects" component={HomePage} /> */}
             <Route path="/guides/become-a-developer" component={BecomeDeveloperGuide} />
             <Route path="/guides" component={GuidesPage} />
+            <Route path="/skills" component={SkillsPage} />
             <Redirect from="/" to="/home"/>
           </Switch>
         </main>
