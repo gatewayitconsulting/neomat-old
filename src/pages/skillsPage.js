@@ -46,7 +46,14 @@ import slackImage from "../assets/imgs/skills/slack.svg";
 import typescriptImage from "../assets/imgs/skills/typescript.svg";
 import uxuiImage from "../assets/imgs/skills/ux-ui.svg";
 import wordpressImage from "../assets/imgs/skills/wordpress.svg";
+import newbalanceLogo from "../assets/imgs/newbalance.svg";
+import syllogisteksLogo from "../assets/imgs/syllogisteks.ico";
+import gatewayitconsultingLogo from "../assets/imgs/gitc.svg";
+import websterUniversityLogo from "../assets/imgs/websteruniversity.png";
 
+// icons
+import RadioButtonCheckedIcon from '@material-ui/icons/RadioButtonChecked';
+import RadioButtonUncheckedIcon from '@material-ui/icons/RadioButtonUnchecked';
 
 // styles
 import homePageStyles from "../styles/homePageStyles";
@@ -58,12 +65,60 @@ export default function SkillsPage() {
     const classes = useStyles();
     return (
         <div className={classes.containerFluid} style={{ textAlign: "center", marginTop: "2em", marginBottom: "2em" }}>
-            <div className={classes.main}>
+            <div className={classes.main} style={{ marginLeft: "2em", marginRight: "2em" }}>
                 <Typography variant="h4" color="white">Skills and Experience</Typography>
                 <Typography variant="body1" color="white" style={{ marginTop: "1em" }}><i>Currently only looking for small freelance projects.</i></Typography>
                 <Typography variant="h4" component="h2" color="white" style={{ marginTop: "2em" }}>Experience</Typography>
-                <Typography variant="h4" component="h2" color="white" style={{ marginTop: "2em" }}>Skills</Typography>
-                <Grid container spacing={1} style={{ marginTop: "1em", marginBottom: "2em" }}>
+                <Grid container spacing={1} style={{ textAlign: "left", marginTop: "1em", marginBottom: "2em", paddingLeft: "2em", paddingRight: "2em" }}>
+                    <Grid item xs={12}>
+                        <div style={{ display: "flex", alignItems: "center", borderTop: "1px solid #FFF", paddingTop: "1em" }}>
+                            <RadioButtonCheckedIcon style={{ marginRight: ".25em" }} />
+                            <Typography variant="body1" color="white">March, 2021 - Current</Typography>
+                        </div>
+                        <div style={{ display: "flex", alignItems: "center" }}>
+                            <img src={newbalanceLogo} style={{ width: "50px", marginRight: ".5em" }} />
+                            <Typography variant="h4" component="h3" color="white" style={{ display: "inline" }}>New Balance</Typography>
+                        </div>
+                    </Grid>
+                    <Grid item xs={12} style={{ marginTop: "3em" }}>
+                    <div style={{ display: "flex", alignItems: "center", borderTop: "1px solid #FFF", paddingTop: "1em" }}>
+                            <RadioButtonUncheckedIcon style={{ marginRight: ".25em" }} />
+                            <Typography variant="body1" color="white">March, 2018 - March, 2021</Typography>
+                        </div>
+                        <div style={{ display: "flex", alignItems: "center" }}>
+                            <img src={syllogisteksLogo} style={{ width: "20px", marginRight: ".5em" }} />
+                            <Typography variant="h4" component="h3" color="white" style={{ display: "inline" }}>SyllogisTeks</Typography>
+                        </div>
+                    </Grid>
+                    <Grid item xs={12} style={{ marginTop: "3em" }}>
+                        <div style={{ display: "flex", alignItems: "center", borderTop: "1px solid #FFF", paddingTop: "1em" }}>
+                            <RadioButtonCheckedIcon style={{ marginRight: ".25em" }} />
+                            <Typography variant="body1" color="white">2018 - Current</Typography>
+                        </div>
+                        <div style={{ display: "flex", alignItems: "center" }}>
+                            <img src={gatewayitconsultingLogo} style={{ width: "30px", marginRight: ".5em" }} />
+                            <Typography variant="h4" component="h3" color="white" style={{ display: "inline" }}>Gateway IT Consulting</Typography>
+                        </div>
+                    </Grid>
+                </Grid>
+                <Typography variant="h4" component="h2" color="white" style={{ marginTop: "2em" }}>Education</Typography>
+                <Grid container spacing={1} style={{ textAlign: "left", marginTop: "1em", marginBottom: "2em", paddingLeft: "2em", paddingRight: "2em" }}>
+                    <Grid item xs={12}>
+                        <div style={{ display: "flex", alignItems: "center", borderTop: "1px solid #FFF", paddingTop: "1em" }}>
+                            <RadioButtonCheckedIcon style={{ marginRight: ".25em" }} />
+                            <Typography variant="body1" color="white">Graduated December 2017</Typography>
+                        </div>
+                        <div style={{ display: "flex", alignItems: "center" }}>
+                            <img src={websterUniversityLogo} style={{ width: "50px", marginRight: ".5em", paddingTop: "1em", paddingBottom: "1em" }} />
+                            <Typography variant="h4" component="h3" color="white" style={{ display: "inline" }}>Webster University, St. Louis, Missouri</Typography>
+                        </div>
+                        <Typography variant="body1" color="white">- Bachelor’s Degree in Information Systems, Minor in Web Development - 3.5 GPA / Minor Completed with GPA of 3.76</Typography>
+                    </Grid>
+                </Grid>
+                <Grid container spacing={1} style={{ marginTop: "1em", marginBottom: "2em", paddingBottom: "3em", boxShadow: "0px 13px 27px -5px #000, 0px 8px 16px -8px #222" }}>
+                    <Grid item xs={12}>
+                        <Typography variant="h4" component="h2" color="white" style={{ marginTop: "2em" }}>Skills</Typography>
+                    </Grid>
                     <Grid item xs={12} sm={2} style={{ marginTop: "3em" }}>
                         <Avatar
                             alt="HTML5 Icon"
@@ -77,7 +132,7 @@ export default function SkillsPage() {
                                 boxShadow: "0px 13px 27px -5px #000, 0px 8px 16px -8px #222"
                             }}
                         />
-                        <Typography variant="h5" style={{ marginTop: "1em" }}>HTML5</Typography>
+                        <Typography variant="body1" style={{ marginTop: "1.5em" }}>HTML5</Typography>
                     </Grid>
                     <Grid item xs={12} sm={2} style={{ marginTop: "3em" }}>
                         <Avatar
@@ -92,7 +147,7 @@ export default function SkillsPage() {
                                 boxShadow: "0px 13px 27px -5px #000, 0px 8px 16px -8px #222"
                             }}
                         />
-                        <Typography variant="h5" style={{ marginTop: "1em" }}>Adobe <br />Illustrator</Typography>
+                        <Typography variant="body1" style={{ marginTop: "1.5em" }}>Adobe <br />Illustrator</Typography>
                     </Grid>
                     <Grid item xs={12} sm={2} style={{ marginTop: "3em" }}>
                         <Avatar
@@ -107,7 +162,7 @@ export default function SkillsPage() {
                                 boxShadow: "0px 13px 27px -5px #000, 0px 8px 16px -8px #222"
                             }}
                         />
-                        <Typography variant="h5" style={{ marginTop: "1em" }}>Adobe <br />Photoshop</Typography>
+                        <Typography variant="body1" style={{ marginTop: "1.5em" }}>Adobe <br />Photoshop</Typography>
                     </Grid>
                     <Grid item xs={12} sm={2} style={{ marginTop: "3em" }}>
                         <Avatar
@@ -122,7 +177,7 @@ export default function SkillsPage() {
                                 boxShadow: "0px 13px 27px -5px #000, 0px 8px 16px -8px #222"
                             }}
                         />
-                        <Typography variant="h5" style={{ marginTop: "1em" }}>Atlassian</Typography>
+                        <Typography variant="body1" style={{ marginTop: "1.5em" }}>Atlassian</Typography>
                     </Grid>
                     <Grid item xs={12} sm={2} style={{ marginTop: "3em" }}>
                         <Avatar
@@ -137,7 +192,7 @@ export default function SkillsPage() {
                                 boxShadow: "0px 13px 27px -5px #000, 0px 8px 16px -8px #222"
                             }}
                         />
-                        <Typography variant="h5" style={{ marginTop: "1em" }}>Jira</Typography>
+                        <Typography variant="body1" style={{ marginTop: "1.5em" }}>Jira</Typography>
                     </Grid>
                     <Grid item xs={12} sm={2} style={{ marginTop: "3em" }}>
                         <Avatar
@@ -152,7 +207,7 @@ export default function SkillsPage() {
                                 boxShadow: "0px 13px 27px -5px #000, 0px 8px 16px -8px #222"
                             }}
                         />
-                        <Typography variant="h5" style={{ marginTop: "1em" }}>Angular</Typography>
+                        <Typography variant="body1" style={{ marginTop: "1.5em" }}>Angular</Typography>
                     </Grid>
                     <Grid item xs={12} sm={2} style={{ marginTop: "3em" }}>
                         <Avatar
@@ -167,7 +222,7 @@ export default function SkillsPage() {
                                 boxShadow: "0px 13px 27px -5px #000, 0px 8px 16px -8px #222"
                             }}
                         />
-                        <Typography variant="h5" style={{ marginTop: "1em" }}>Bootstrap</Typography>
+                        <Typography variant="body1" style={{ marginTop: "1.5em" }}>Bootstrap</Typography>
                     </Grid>
                     <Grid item xs={12} sm={2} style={{ marginTop: "3em" }}>
                         <Avatar
@@ -182,7 +237,7 @@ export default function SkillsPage() {
                                 boxShadow: "0px 13px 27px -5px #000, 0px 8px 16px -8px #222"
                             }}
                         />
-                        <Typography variant="h5" style={{ marginTop: "1em" }}>C#</Typography>
+                        <Typography variant="body1" style={{ marginTop: "1.5em" }}>C#</Typography>
                     </Grid>
                     <Grid item xs={12} sm={2} style={{ marginTop: "3em" }}>
                         <Avatar
@@ -197,7 +252,7 @@ export default function SkillsPage() {
                                 boxShadow: "0px 13px 27px -5px #000, 0px 8px 16px -8px #222"
                             }}
                         />
-                        <Typography variant="h5" style={{ marginTop: "1em" }}>CSS3</Typography>
+                        <Typography variant="body1" style={{ marginTop: "1.5em" }}>CSS3</Typography>
                     </Grid>
                     <Grid item xs={12} sm={2} style={{ marginTop: "3em" }}>
                         <Avatar
@@ -212,7 +267,7 @@ export default function SkillsPage() {
                                 boxShadow: "0px 13px 27px -5px #000, 0px 8px 16px -8px #222"
                             }}
                         />
-                        <Typography variant="h5" style={{ marginTop: "1em" }}>.NET</Typography>
+                        <Typography variant="body1" style={{ marginTop: "1.5em" }}>.NET</Typography>
                     </Grid>
                     <Grid item xs={12} sm={2} style={{ marginTop: "3em" }}>
                         <Avatar
@@ -227,7 +282,7 @@ export default function SkillsPage() {
                                 boxShadow: "0px 13px 27px -5px #000, 0px 8px 16px -8px #222"
                             }}
                         />
-                        <Typography variant="h5" style={{ marginTop: "1em" }}>Git</Typography>
+                        <Typography variant="body1" style={{ marginTop: "1.5em" }}>Git</Typography>
                     </Grid>
                     <Grid item xs={12} sm={2} style={{ marginTop: "3em" }}>
                         <Avatar
@@ -242,7 +297,7 @@ export default function SkillsPage() {
                                 boxShadow: "0px 13px 27px -5px #000, 0px 8px 16px -8px #222"
                             }}
                         />
-                        <Typography variant="h5" style={{ marginTop: "1em" }}>Github</Typography>
+                        <Typography variant="body1" style={{ marginTop: "1.5em" }}>Github</Typography>
                     </Grid>
                     <Grid item xs={12} sm={2} style={{ marginTop: "3em" }}>
                         <Avatar
@@ -257,7 +312,7 @@ export default function SkillsPage() {
                                 boxShadow: "0px 13px 27px -5px #000, 0px 8px 16px -8px #222"
                             }}
                         />
-                        <Typography variant="h5" style={{ marginTop: "1em" }}>Google <br />Analytics</Typography>
+                        <Typography variant="body1" style={{ marginTop: "1.5em" }}>Google <br />Analytics</Typography>
                     </Grid>
                     <Grid item xs={12} sm={2} style={{ marginTop: "3em" }}>
                         <Avatar
@@ -272,7 +327,7 @@ export default function SkillsPage() {
                                 boxShadow: "0px 13px 27px -5px #000, 0px 8px 16px -8px #222"
                             }}
                         />
-                        <Typography variant="h5" style={{ marginTop: "1em" }}>Gulp</Typography>
+                        <Typography variant="body1" style={{ marginTop: "1.5em" }}>Gulp</Typography>
                     </Grid>
                     <Grid item xs={12} sm={2} style={{ marginTop: "3em" }}>
                         <Avatar
@@ -287,7 +342,7 @@ export default function SkillsPage() {
                                 boxShadow: "0px 13px 27px -5px #000, 0px 8px 16px -8px #222"
                             }}
                         />
-                        <Typography variant="h5" style={{ marginTop: "1em" }}>Heroku</Typography>
+                        <Typography variant="body1" style={{ marginTop: "1.5em" }}>Heroku</Typography>
                     </Grid>
                     <Grid item xs={12} sm={2} style={{ marginTop: "3em" }}>
                         <Avatar
@@ -302,7 +357,7 @@ export default function SkillsPage() {
                                 boxShadow: "0px 13px 27px -5px #000, 0px 8px 16px -8px #222"
                             }}
                         />
-                        <Typography variant="h5" style={{ marginTop: "1em" }}>inVision</Typography>
+                        <Typography variant="body1" style={{ marginTop: "1.5em" }}>inVision</Typography>
                     </Grid>
                     <Grid item xs={12} sm={2} style={{ marginTop: "3em" }}>
                         <Avatar
@@ -317,7 +372,7 @@ export default function SkillsPage() {
                                 boxShadow: "0px 13px 27px -5px #000, 0px 8px 16px -8px #222"
                             }}
                         />
-                        <Typography variant="h5" style={{ marginTop: "1em" }}>JavaScript</Typography>
+                        <Typography variant="body1" style={{ marginTop: "1.5em" }}>JavaScript</Typography>
                     </Grid>
                     <Grid item xs={12} sm={2} style={{ marginTop: "3em" }}>
                         <Avatar
@@ -332,7 +387,7 @@ export default function SkillsPage() {
                                 boxShadow: "0px 13px 27px -5px #000, 0px 8px 16px -8px #222"
                             }}
                         />
-                        <Typography variant="h5" style={{ marginTop: "1em" }}>jQuery</Typography>
+                        <Typography variant="body1" style={{ marginTop: "1.5em" }}>jQuery</Typography>
                     </Grid>
                     <Grid item xs={12} sm={2} style={{ marginTop: "3em" }}>
                         <Avatar
@@ -347,7 +402,7 @@ export default function SkillsPage() {
                                 boxShadow: "0px 13px 27px -5px #000, 0px 8px 16px -8px #222"
                             }}
                         />
-                        <Typography variant="h5" style={{ marginTop: "1em" }}>JSON</Typography>
+                        <Typography variant="body1" style={{ marginTop: "1.5em" }}>JSON</Typography>
                     </Grid>
                     <Grid item xs={12} sm={2} style={{ marginTop: "3em" }}>
                         <Avatar
@@ -362,7 +417,7 @@ export default function SkillsPage() {
                                 boxShadow: "0px 13px 27px -5px #000, 0px 8px 16px -8px #222"
                             }}
                         />
-                        <Typography variant="h5" style={{ marginTop: "1em" }}>Mailchimp</Typography>
+                        <Typography variant="body1" style={{ marginTop: "1.5em" }}>Mailchimp</Typography>
                     </Grid>
                     <Grid item xs={12} sm={2} style={{ marginTop: "3em" }}>
                         <Avatar
@@ -377,7 +432,7 @@ export default function SkillsPage() {
                                 boxShadow: "0px 13px 27px -5px #000, 0px 8px 16px -8px #222"
                             }}
                         />
-                        <Typography variant="h5" style={{ marginTop: "1em" }}>Material <br />Design</Typography>
+                        <Typography variant="body1" style={{ marginTop: "1.5em" }}>Material <br />Design</Typography>
                     </Grid>
                     <Grid item xs={12} sm={2} style={{ marginTop: "3em" }}>
                         <Avatar
@@ -392,7 +447,7 @@ export default function SkillsPage() {
                                 boxShadow: "0px 13px 27px -5px #000, 0px 8px 16px -8px #222"
                             }}
                         />
-                        <Typography variant="h5" style={{ marginTop: "1em" }}>Node JS</Typography>
+                        <Typography variant="body1" style={{ marginTop: "1.5em" }}>Node JS</Typography>
                     </Grid>
                     <Grid item xs={12} sm={2} style={{ marginTop: "3em" }}>
                         <Avatar
@@ -407,7 +462,7 @@ export default function SkillsPage() {
                                 boxShadow: "0px 13px 27px -5px #000, 0px 8px 16px -8px #222"
                             }}
                         />
-                        <Typography variant="h5" style={{ marginTop: "1em" }}>MySQL</Typography>
+                        <Typography variant="body1" style={{ marginTop: "1.5em" }}>MySQL</Typography>
                     </Grid>
                     <Grid item xs={12} sm={2} style={{ marginTop: "3em" }}>
                         <Avatar
@@ -422,7 +477,7 @@ export default function SkillsPage() {
                                 boxShadow: "0px 13px 27px -5px #000, 0px 8px 16px -8px #222"
                             }}
                         />
-                        <Typography variant="h5" style={{ marginTop: "1em" }}>NPM</Typography>
+                        <Typography variant="body1" style={{ marginTop: "1.5em" }}>NPM</Typography>
                     </Grid>
                     <Grid item xs={12} sm={2} style={{ marginTop: "3em" }}>
                         <Avatar
@@ -437,7 +492,7 @@ export default function SkillsPage() {
                                 boxShadow: "0px 13px 27px -5px #000, 0px 8px 16px -8px #222"
                             }}
                         />
-                        <Typography variant="h5" style={{ marginTop: "1em" }}>PHP</Typography>
+                        <Typography variant="body1" style={{ marginTop: "1.5em" }}>PHP</Typography>
                     </Grid>
                     <Grid item xs={12} sm={2} style={{ marginTop: "3em" }}>
                         <Avatar
@@ -452,7 +507,7 @@ export default function SkillsPage() {
                                 boxShadow: "0px 13px 27px -5px #000, 0px 8px 16px -8px #222"
                             }}
                         />
-                        <Typography variant="h5" style={{ marginTop: "1em" }}>PostgreSQL</Typography>
+                        <Typography variant="body1" style={{ marginTop: "1.5em" }}>PostgreSQL</Typography>
                     </Grid>
                     <Grid item xs={12} sm={2} style={{ marginTop: "3em" }}>
                         <Avatar
@@ -467,7 +522,7 @@ export default function SkillsPage() {
                                 boxShadow: "0px 13px 27px -5px #000, 0px 8px 16px -8px #222"
                             }}
                         />
-                        <Typography variant="h5" style={{ marginTop: "1em" }}>ReactJS</Typography>
+                        <Typography variant="body1" style={{ marginTop: "1.5em" }}>ReactJS</Typography>
                     </Grid>
                     <Grid item xs={12} sm={2} style={{ marginTop: "3em" }}>
                         <Avatar
@@ -482,7 +537,7 @@ export default function SkillsPage() {
                                 boxShadow: "0px 13px 27px -5px #000, 0px 8px 16px -8px #222"
                             }}
                         />
-                        <Typography variant="h5" style={{ marginTop: "1em" }}>Responsive <br />Design</Typography>
+                        <Typography variant="body1" style={{ marginTop: "1.5em" }}>Responsive <br />Design</Typography>
                     </Grid>
                     <Grid item xs={12} sm={2} style={{ marginTop: "3em" }}>
                         <Avatar
@@ -497,7 +552,7 @@ export default function SkillsPage() {
                                 boxShadow: "0px 13px 27px -5px #000, 0px 8px 16px -8px #222"
                             }}
                         />
-                        <Typography variant="h5" style={{ marginTop: "1em" }}>Salesforce</Typography>
+                        <Typography variant="body1" style={{ marginTop: "1.5em" }}>Salesforce</Typography>
                     </Grid>
                     <Grid item xs={12} sm={2} style={{ marginTop: "3em" }}>
                         <Avatar
@@ -512,7 +567,7 @@ export default function SkillsPage() {
                                 boxShadow: "0px 13px 27px -5px #000, 0px 8px 16px -8px #222"
                             }}
                         />
-                        <Typography variant="h5" style={{ marginTop: "1em" }}>SASS</Typography>
+                        <Typography variant="body1" style={{ marginTop: "1.5em" }}>SASS</Typography>
                     </Grid>
                     <Grid item xs={12} sm={2} style={{ marginTop: "3em" }}>
                         <Avatar
@@ -527,7 +582,7 @@ export default function SkillsPage() {
                                 boxShadow: "0px 13px 27px -5px #000, 0px 8px 16px -8px #222"
                             }}
                         />
-                        <Typography variant="h5" style={{ marginTop: "1em" }}>Sketch</Typography>
+                        <Typography variant="body1" style={{ marginTop: "1.5em" }}>Sketch</Typography>
                     </Grid>
                     <Grid item xs={12} sm={2} style={{ marginTop: "3em" }}>
                         <Avatar
@@ -542,7 +597,7 @@ export default function SkillsPage() {
                                 boxShadow: "0px 13px 27px -5px #000, 0px 8px 16px -8px #222"
                             }}
                         />
-                        <Typography variant="h5" style={{ marginTop: "1em" }}>Slack</Typography>
+                        <Typography variant="body1" style={{ marginTop: "1.5em" }}>Slack</Typography>
                     </Grid>
                     <Grid item xs={12} sm={2} style={{ marginTop: "3em" }}>
                         <Avatar
@@ -557,7 +612,7 @@ export default function SkillsPage() {
                                 boxShadow: "0px 13px 27px -5px #000, 0px 8px 16px -8px #222"
                             }}
                         />
-                        <Typography variant="h5" style={{ marginTop: "1em" }}>TypeScript</Typography>
+                        <Typography variant="body1" style={{ marginTop: "1.5em" }}>TypeScript</Typography>
                     </Grid>
                     <Grid item xs={12} sm={2} style={{ marginTop: "3em" }}>
                         <Avatar
@@ -572,7 +627,7 @@ export default function SkillsPage() {
                                 boxShadow: "0px 13px 27px -5px #000, 0px 8px 16px -8px #222"
                             }}
                         />
-                        <Typography variant="h5" style={{ marginTop: "1em" }}>UX UI</Typography>
+                        <Typography variant="body1" style={{ marginTop: "1.5em" }}>UX UI</Typography>
                     </Grid>
                     <Grid item xs={12} sm={2} style={{ marginTop: "3em" }}>
                         <Avatar
@@ -587,7 +642,7 @@ export default function SkillsPage() {
                                 boxShadow: "0px 13px 27px -5px #000, 0px 8px 16px -8px #222"
                             }}
                         />
-                        <Typography variant="h5" style={{ marginTop: "1em" }}>WordPress</Typography>
+                        <Typography variant="body1" style={{ marginTop: "1.5em" }}>WordPress</Typography>
                     </Grid>
                 </Grid>
                 <Footer />
