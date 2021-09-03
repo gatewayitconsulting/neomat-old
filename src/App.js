@@ -21,7 +21,7 @@ import { Switch, Route, Link, BrowserRouter, Redirect } from "react-router-dom";
 import HomePage from "./pages/homePage";
 import GuidesPage from "./pages/guidesPage";
 import BecomeDeveloperGuide from "./pages/mockGuides/becomeDeveloperGuide";
-import SkillsPage from "./pages/skillsPage";
+import ResumePage from "./pages/resumePage";
 
 const drawerWidth = 240;
 
@@ -126,7 +126,7 @@ function App(props) {
       </div>
       <Divider />
       <List>
-        {["Home", "Skills", "Guides"].map((text, index) => (
+        {["Home", "Resume", "Guides"].map((text, index) => (
           <ListItem 
             key={text}
             component={Link}
@@ -200,7 +200,7 @@ function App(props) {
             {/* <Route path="/projects" component={HomePage} /> */}
             <Route path="/guides/become-a-developer" component={BecomeDeveloperGuide} />
             <Route path="/guides" component={GuidesPage} />
-            <Route path="/skills" component={SkillsPage} />
+            <Route path="/resume" component={ResumePage} />
             <Redirect from="/" to="/home"/>
           </Switch>
         </main>

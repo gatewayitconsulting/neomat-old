@@ -6,6 +6,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import { Avatar } from "@material-ui/core";
 import Grid from '@material-ui/core/Grid';
 import Typography from "@material-ui/core/Typography";
+import Link from "@material-ui/core/Link";
 
 // sections of this Page
 import Footer from "./footer";
@@ -67,9 +68,20 @@ export default function SkillsPage() {
     return (
         <div className={classes.containerFluid} style={{ textAlign: "center", marginTop: "2em", marginBottom: "2em" }}>
             <div className={classes.main} style={{ marginLeft: "2em", marginRight: "2em" }}>
-                <Typography variant="h4" color="white">Skills and Experience</Typography>
+                <Typography variant="h3" color="white">Resume</Typography>
                 <Typography variant="body1" color="white" style={{ marginTop: "1em" }}><i>Currently only looking for small freelance projects.</i></Typography>
-                <Typography variant="h4" component="h2" color="white" style={{ marginTop: "2em" }}>Experience</Typography>
+                <Typography style={{ marginTop: "2em" }}>
+                    <Link href="#experience" color="white" style={{ marginRight: "1em", textDecoration: "underline" }}>
+                        Experience
+                    </Link>
+                    <Link href="#education" color="white" style={{ marginRight: "1em", textDecoration: "underline" }}>
+                        Education
+                    </Link>
+                    <Link href="#skills" color="white" style={{ marginRight: "1em", textDecoration: "underline" }}>
+                        Skills
+                    </Link>
+                </Typography>
+                <Typography variant="h3" component="h2" color="white" style={{ marginTop: "1em", textAlign: "left", marginLeft: ".5em" }} id="experience">Experience</Typography>
                 <Grid container spacing={1} style={{ textAlign: "left", marginTop: "1em", marginBottom: "2em", paddingLeft: "2em", paddingRight: "2em" }}>
                     <Grid item xs={12}>
                         <div style={{ display: "flex", alignItems: "center", borderTop: "1px solid #FFF", paddingTop: "1em" }}>
@@ -100,9 +112,21 @@ export default function SkillsPage() {
                             <img src={gatewayitconsultingLogo} style={{ width: "30px", marginRight: ".5em" }} />
                             <Typography variant="h4" component="h3" color="white" style={{ display: "inline" }}>Gateway IT Consulting</Typography>
                         </div>
+                        <Typography variant="body1" color="white" style={{ marginTop: ".25em", marginBottom: ".25em" }}><i>Clients include internal and Our Lady's Inn.</i></Typography>
+                        <Typography variant="body1" color="white" style={{ marginLeft: "1em" }}>- Project managed from a technical perspective, successful virtual marathon for response to COVID business impact.</Typography>
+                        <Typography variant="body1" color="white" style={{ marginLeft: "1em" }}>- Prototyped in inVision and developed TypeScript, Angular 11, Material Design, SASS, HTML5, external facing, data driven dashboard.</Typography>
+                        <Typography variant="body1" color="white" style={{ marginLeft: "1em" }}>- Designed and developed JavaScript, Angular 7, Bootstrap 4, SASS, HTML5, JSON-using external facing, responsive application.</Typography>
+                        <Typography variant="body1" color="white" style={{ marginLeft: "1em" }}>- Prototyped in Sketch and developed JavaScript, AngularJS, PHP, SASS, CSS3, HTML5 external facing, responsive website using custom wrote SASS library.</Typography>
+                        <Typography variant="body1" color="white" style={{ marginLeft: "1em" }}>- Developed application using WordPress, JavaScript, CSS3, HTML5, PHP, SQL, and Google Analytics.</Typography>
+                        <Typography variant="body1" color="white" style={{ marginLeft: "1em" }}>- Developed information reports of user data from Google Analytics for organizations to optimize social media outreach and used 3rd party form integration tools to increase website traffic and profit generation from virtual events.</Typography>
+                        <Typography variant="body1" color="white" style={{ marginLeft: "1em" }}>- Supported several WordPress websites using JavaScript, CSS3, HTML5, PHP, SQL, and Google Analytics.</Typography>
+                        <Typography variant="body1" color="white" style={{ marginLeft: "1em" }}>- Developed custom made CSS3/SASS library to be used as an alternative for clients to Bootstrap.</Typography>
+                        <Typography variant="body1" color="white" style={{ marginLeft: "1em" }}>- Supported projects with Git and GitHub.</Typography>
+                        <Typography variant="body1" color="white" style={{ marginLeft: "1em" }}>- Developed optimization tasks using Gulp, NPM, and Batch files.</Typography>
+                        <Typography variant="body1" color="white" style={{ marginLeft: "1em" }}>- Used Photoshop to create and optimize multi-layered graphics for applications and brands.</Typography>
                     </Grid>
                 </Grid>
-                <Typography variant="h4" component="h2" color="white" style={{ marginTop: "2em" }}>Education</Typography>
+                <Typography variant="h3" component="h2" color="white" style={{ marginTop: "1em", textAlign: "left", marginLeft: ".5em" }} id="education">Education</Typography>
                 <Grid container spacing={1} style={{ textAlign: "left", marginTop: "1em", marginBottom: "2em", paddingLeft: "2em", paddingRight: "2em" }}>
                     <Grid item xs={12}>
                         <div style={{ display: "flex", alignItems: "center", borderTop: "1px solid #FFF", paddingTop: "1em" }}>
@@ -116,9 +140,9 @@ export default function SkillsPage() {
                         <Typography variant="body1" color="white">- Bachelor’s Degree in Information Systems, Minor in Web Development - 3.5 GPA / Minor Completed with GPA of 3.76</Typography>
                     </Grid>
                 </Grid>
-                <Grid container spacing={1} style={{ marginTop: "1em", marginBottom: "2em", paddingBottom: "3em", boxShadow: "0px 13px 27px -5px #000, 0px 8px 16px -8px #222" }}>
+                <Grid container spacing={1} style={{ marginTop: "1em", marginBottom: "2em", paddingBottom: "3em", boxShadow: "0px 13px 27px -5px #000, 0px 8px 16px -8px #222" }} id="skills">
                     <Grid item xs={12}>
-                        <Typography variant="h4" component="h2" color="white" style={{ marginTop: "2em" }}>Skills</Typography>
+                        <Typography variant="h3" component="h2" color="white" style={{ marginTop: "2em" }}>Skills</Typography>
                     </Grid>
                     <Grid item xs={12} sm={2} style={{ marginTop: "3em" }}>
                         <Avatar
