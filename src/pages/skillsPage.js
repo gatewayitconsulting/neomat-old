@@ -46,6 +46,7 @@ import slackImage from "../assets/imgs/skills/slack.svg";
 import typescriptImage from "../assets/imgs/skills/typescript.svg";
 import uxuiImage from "../assets/imgs/skills/ux-ui.svg";
 import wordpressImage from "../assets/imgs/skills/wordpress.svg";
+import shopifyImage from "../assets/imgs/skills/shopify.svg";
 import newbalanceLogo from "../assets/imgs/newbalance.svg";
 import syllogisteksLogo from "../assets/imgs/syllogisteks.ico";
 import gatewayitconsultingLogo from "../assets/imgs/gitc.svg";
@@ -72,7 +73,7 @@ export default function SkillsPage() {
                 <Grid container spacing={1} style={{ textAlign: "left", marginTop: "1em", marginBottom: "2em", paddingLeft: "2em", paddingRight: "2em" }}>
                     <Grid item xs={12}>
                         <div style={{ display: "flex", alignItems: "center", borderTop: "1px solid #FFF", paddingTop: "1em" }}>
-                            <RadioButtonCheckedIcon style={{ marginRight: ".25em" }} />
+                            <RadioButtonCheckedIcon style={{ marginRight: ".25em", boxShadow: "0px 13px 27px -5px #000, 0px 8px 16px -8px #222" }} />
                             <Typography variant="body1" color="white">March, 2021 - Current</Typography>
                         </div>
                         <div style={{ display: "flex", alignItems: "center" }}>
@@ -81,8 +82,8 @@ export default function SkillsPage() {
                         </div>
                     </Grid>
                     <Grid item xs={12} style={{ marginTop: "3em" }}>
-                    <div style={{ display: "flex", alignItems: "center", borderTop: "1px solid #FFF", paddingTop: "1em" }}>
-                            <RadioButtonUncheckedIcon style={{ marginRight: ".25em" }} />
+                        <div style={{ display: "flex", alignItems: "center", borderTop: "1px solid #FFF", paddingTop: "1em" }}>
+                            <RadioButtonUncheckedIcon style={{ marginRight: ".25em", boxShadow: "0px 13px 27px -5px #000, 0px 8px 16px -8px #222" }} />
                             <Typography variant="body1" color="white">March, 2018 - March, 2021</Typography>
                         </div>
                         <div style={{ display: "flex", alignItems: "center" }}>
@@ -92,7 +93,7 @@ export default function SkillsPage() {
                     </Grid>
                     <Grid item xs={12} style={{ marginTop: "3em" }}>
                         <div style={{ display: "flex", alignItems: "center", borderTop: "1px solid #FFF", paddingTop: "1em" }}>
-                            <RadioButtonCheckedIcon style={{ marginRight: ".25em" }} />
+                            <RadioButtonCheckedIcon style={{ marginRight: ".25em", boxShadow: "0px 13px 27px -5px #000, 0px 8px 16px -8px #222" }} />
                             <Typography variant="body1" color="white">2018 - Current</Typography>
                         </div>
                         <div style={{ display: "flex", alignItems: "center" }}>
@@ -105,7 +106,7 @@ export default function SkillsPage() {
                 <Grid container spacing={1} style={{ textAlign: "left", marginTop: "1em", marginBottom: "2em", paddingLeft: "2em", paddingRight: "2em" }}>
                     <Grid item xs={12}>
                         <div style={{ display: "flex", alignItems: "center", borderTop: "1px solid #FFF", paddingTop: "1em" }}>
-                            <RadioButtonCheckedIcon style={{ marginRight: ".25em" }} />
+                            <RadioButtonCheckedIcon style={{ marginRight: ".25em", boxShadow: "0px 13px 27px -5px #000, 0px 8px 16px -8px #222" }} />
                             <Typography variant="body1" color="white">Graduated December 2017</Typography>
                         </div>
                         <div style={{ display: "flex", alignItems: "center" }}>
@@ -643,6 +644,21 @@ export default function SkillsPage() {
                             }}
                         />
                         <Typography variant="body1" style={{ marginTop: "1.5em" }}>WordPress</Typography>
+                    </Grid>
+                    <Grid item xs={12} sm={2} style={{ marginTop: "3em" }}>
+                        <Avatar
+                            alt="Shopify Icon"
+                            src={shopifyImage}
+                            style={{
+                                height: avatarSize,
+                                width: avatarSize,
+                                objectFit: "contain",
+                                marginLeft: "auto",
+                                marginRight: "auto",
+                                boxShadow: "0px 13px 27px -5px #000, 0px 8px 16px -8px #222"
+                            }}
+                        />
+                        <Typography variant="body1" style={{ marginTop: "1.5em" }}>Shopify</Typography>
                     </Grid>
                 </Grid>
                 <Footer />
