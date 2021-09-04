@@ -11,6 +11,7 @@
     "@testing-library/react": "^11.2.6",
     "@testing-library/user-event": "^12.8.3",
     "classnames": "^2.3.1",
+    "linkinator": "^2.14.0",
     "prop-types": "^15.7.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
@@ -23,7 +24,8 @@
     "install": "npm install",
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test"
+    "test": "react-scripts test",
+    "check-links": "node ./tests/linkinator.js"
   },
   "eslintConfig": {
     "extends": [
