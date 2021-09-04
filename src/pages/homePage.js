@@ -21,10 +21,10 @@ export default function HomePage() {
   return (
     <div className={classes.containerFluid}>
       <div className={classes.main}>
-          <BannerSection />
-          <AdvertisementSection />
-          <ContactSection />
-          <Footer />
+        <BannerSection />
+        <AdvertisementSection />
+        <ContactSection />
+        <Footer />
       </div>
     </div>
   );

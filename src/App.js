@@ -6,13 +6,14 @@ import Divider from "@material-ui/core/Divider";
 import Drawer from "@material-ui/core/Drawer";
 import clsx from "clsx";
 import IconButton from "@material-ui/core/IconButton";
-import InboxIcon from "@material-ui/icons/MoveToInbox";
+import HomeIcon from '@material-ui/icons/Home';
+import LibraryBooks from "@material-ui/icons/LibraryBooks";
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
 import ListItemIcon from "@material-ui/core/ListItemIcon";
 import ListItemText from "@material-ui/core/ListItemText";
 import ChevronRightIcon from '@material-ui/icons/ChevronRight';
-import MailIcon from "@material-ui/icons/Mail";
+import AssignmentIndIcon from '@material-ui/icons/AssignmentInd';
 import MenuIcon from "@material-ui/icons/Menu";
 import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
@@ -127,7 +128,7 @@ function App(props) {
       <Divider />
       <List>
         {["Home", "Resume", "Guides"].map((text, index) => (
-          <ListItem 
+          <ListItem
             key={text}
             component={Link}
             to={"/" + text.toLocaleLowerCase()}
@@ -136,7 +137,9 @@ function App(props) {
             aria-label={"Navigate to the " + text.toLocaleLowerCase() + " page"}
           >
             <ListItemIcon>
-              {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
+              {index === 0 ? <HomeIcon /> : <span></span>}
+              {index === 1 ? <AssignmentIndIcon /> : <span></span>}
+              {index === 2 ? <LibraryBooks /> : <span></span>}
             </ListItemIcon>
             <ListItemText primary={text} />
           </ListItem>
@@ -150,7 +153,7 @@ function App(props) {
       <CssBaseline />
       <AppBar position="fixed" className={classes.appBar}>
         <Toolbar className={classes.justifyContentBetween}>
-          <a 
+          <a
             href="/Home"
             style={{ textDecoration: "none", color: "#FFF", fontSize: "1.25rem", lineHeight: "1.6" }}
           >
@@ -171,26 +174,26 @@ function App(props) {
       </AppBar>
       <BrowserRouter>
         <nav className={classes.drawer} aria-label="mailbox folders">
-            <Drawer
-              container={container}
-              variant="persistent"
-              anchor="right"
-              open={open}
-              onClose={handleDrawerClose}
-              classes={{
-                paper: classes.drawerPaper
-              }}
-              ModalProps={{
-                keepMounted: true // Better open performance on mobile.
-              }}
-            >
-              <div className={classes.drawerHeader}>
-                <IconButton onClick={handleDrawerClose} className={classes.neoCloseMenu} aria-label="Close menu">
-                  <ChevronRightIcon/>
-                </IconButton>
-              </div>
-              {drawer}
-            </Drawer>
+          <Drawer
+            container={container}
+            variant="persistent"
+            anchor="right"
+            open={open}
+            onClose={handleDrawerClose}
+            classes={{
+              paper: classes.drawerPaper
+            }}
+            ModalProps={{
+              keepMounted: true // Better open performance on mobile.
+            }}
+          >
+            <div className={classes.drawerHeader}>
+              <IconButton onClick={handleDrawerClose} className={classes.neoCloseMenu} aria-label="Close menu">
+                <ChevronRightIcon />
+              </IconButton>
+            </div>
+            {drawer}
+          </Drawer>
         </nav>
 
         <main className={classes.content}>
@@ -201,7 +204,7 @@ function App(props) {
             <Route path="/guides/become-a-developer" component={BecomeDeveloperGuide} />
             <Route path="/guides" component={GuidesPage} />
             <Route path="/resume" component={ResumePage} />
-            <Redirect from="/" to="/home"/>
+            <Redirect from="/" to="/home" />
           </Switch>
         </main>
       </BrowserRouter>

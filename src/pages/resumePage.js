@@ -90,11 +90,11 @@ export default function SkillsPage() {
                             <Typography variant="body1" color="white">March, 2021 - Current</Typography>
                         </div>
                         <div style={{ display: "flex", alignItems: "center" }}>
-                            <img src={newbalanceLogo} style={{ width: "50px", marginRight: ".5em" }} />
+                            <img src={newbalanceLogo} style={{ width: "50px", marginRight: ".5em" }} alt="New Balance logo" />
                             <Typography variant="h4" component="h3" color="white" style={{ display: "inline" }}>New Balance</Typography>
                         </div>
                         <Typography variant="h5" component="h3" color="white" style={{ display: "inline" }}>Software Engineer</Typography>
-                        <Typography variant="body1" color="white" style={{ marginLeft: "1em", marginTop: ".25em" }}>- Currently in progress</Typography>
+                        <Typography variant="body1" color="white" style={{ marginLeft: "1em", marginTop: ".25em" }}>- Currently working</Typography>
                     </Grid>
                     <Grid item xs={12} style={{ marginTop: "3em" }}>
                         <div style={{ display: "flex", alignItems: "center", borderTop: "1px solid #FFF", paddingTop: "1em" }}>
@@ -102,7 +102,7 @@ export default function SkillsPage() {
                             <Typography variant="body1" color="white">March, 2018 - March, 2021</Typography>
                         </div>
                         <div style={{ display: "flex", alignItems: "center" }}>
-                            <img src={syllogisteksLogo} style={{ width: "20px", marginRight: ".5em" }} />
+                            <img src={syllogisteksLogo} style={{ width: "20px", marginRight: ".5em" }} alt="SyllogisTeks logo" />
                             <Typography variant="h4" component="h3" color="white" style={{ display: "inline" }}>SyllogisTeks</Typography>
                         </div>
                         <div style={{ display: "flex", alignItems: "center", marginTop: "1em" }}>
@@ -110,9 +110,12 @@ export default function SkillsPage() {
                             <Typography variant="body1" color="white">March, 2020 - March, 2021</Typography>
                         </div>
                         <div style={{ display: "flex", alignItems: "center", marginBottom: ".25em" }}>
-                            <img src={newbalanceLogo} style={{ width: "25px", marginRight: ".5em" }} />
+                            <img src={newbalanceLogo} style={{ width: "25px", marginRight: ".5em" }} alt="New Balance small logo" />
                             <Typography variant="h5" component="h3" color="white" style={{ display: "inline" }}>UI Developer at New Balance</Typography>
                         </div>
+                        <Typography variant="body1" color="white" style={{ marginTop: ".5em", marginBottom: ".5em" }}>
+                            <i>Technologies used replaced with "various technologies" to maintain client privacy.</i>
+                        </Typography>
                         <Typography variant="body1" color="white" style={{ marginLeft: "1em" }}>- Developed several external facing website sections using various technologies for flagship transitioning releases of US, CA, AU, NZ, BE, AT, NL, DE, FR, and UK websites.</Typography>
                         <Typography variant="body1" color="white" style={{ marginLeft: "1em" }}>- Developed Salesforce Commerce Cloud component for internal facing business user CMS to automate work processes using various technologies.</Typography>
                         <Typography variant="body1" color="white" style={{ marginLeft: "1em" }}>- Translated complex, multi-layer Photoshop and inVision creatives into pixel perfect, responsive, ADA compliant external facing web pages, daily, for US and CA websites using various technologies.</Typography>
@@ -130,7 +133,7 @@ export default function SkillsPage() {
                             <Typography variant="body1" color="white">March, 2018 - March, 2020</Typography>
                         </div>
                         <div style={{ display: "flex", alignItems: "center", marginBottom: ".25em" }}>
-                            <img src={syllogisteksLogo} style={{ width: "15px", marginRight: ".5em" }} />
+                            <img src={syllogisteksLogo} style={{ width: "15px", marginRight: ".5em" }} alt="SyllogisTeks small logo" />
                             <Typography variant="h5" component="h3" color="white" style={{ display: "inline" }}>Web Developer</Typography>
                         </div>
                         <Typography variant="body1" color="white" style={{ marginTop: ".25em", marginBottom: ".25em" }}><i>Clients include internal and PohlmanUSA.</i></Typography>
@@ -153,7 +156,7 @@ export default function SkillsPage() {
                             <Typography variant="body1" color="white">2018 - Current</Typography>
                         </div>
                         <div style={{ display: "flex", alignItems: "center" }}>
-                            <img src={gatewayitconsultingLogo} style={{ width: "30px", marginRight: ".5em" }} />
+                            <img src={gatewayitconsultingLogo} style={{ width: "30px", marginRight: ".5em" }} alt="Gateway IT Consulting logo" />
                             <Typography variant="h4" component="h3" color="white" style={{ display: "inline" }}>Gateway IT Consulting</Typography>
                         </div>
                         <Typography variant="body1" color="white" style={{ marginTop: ".25em", marginBottom: ".25em" }}><i>Clients include internal and Our Lady's Inn.</i></Typography>
@@ -178,7 +181,7 @@ export default function SkillsPage() {
                             <Typography variant="body1" color="white">Graduated December 2017</Typography>
                         </div>
                         <div style={{ display: "flex", alignItems: "center" }}>
-                            <img src={websterUniversityLogo} style={{ width: "50px", marginRight: ".5em", paddingTop: "1em", paddingBottom: "1em" }} />
+                            <img src={websterUniversityLogo} style={{ width: "50px", marginRight: ".5em", paddingTop: "1em", paddingBottom: "1em" }} alt="Webster University logo" />
                             <Typography variant="h4" component="h3" color="white" style={{ display: "inline" }}>Webster University, St. Louis, Missouri</Typography>
                         </div>
                         <Typography variant="body1" color="white">- Bachelor’s Degree in Information Systems, Minor in Web Development - 3.5 GPA / Minor Completed with GPA of 3.76</Typography>
@@ -729,7 +732,9 @@ export default function SkillsPage() {
                         <Typography variant="body1" style={{ marginTop: "1.5em" }}>Shopify</Typography>
                     </Grid>
                 </Grid>
-                <Footer />
+                <div style={{ textAlign: "left" }}>
+                    <Footer />
+                </div>
             </div>
         </div>
     );
