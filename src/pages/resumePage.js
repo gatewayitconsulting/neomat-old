@@ -70,7 +70,7 @@ export default function SkillsPage() {
         <div className={classes.containerFluid} style={{ textAlign: "center", marginTop: "2em", marginBottom: "2em" }}>
             <div className={classes.main} style={{ marginLeft: "2em", marginRight: "2em" }}>
                 <Typography variant="h3" color="white">Resume</Typography>
-                <Typography variant="body1" color="white" style={{ marginTop: "1em" }}><i>Currently only looking for small freelance projects.</i></Typography>
+                <Typography variant="body1" color="white" style={{ marginTop: "1em" }}><i>Currently only looking for small freelance projects outside of 8am-6pm schedule.</i></Typography>
                 <Typography style={{ marginTop: "2em" }}>
                     <Link href="#experience" color="white" style={{ marginRight: "1em", textDecoration: "underline" }}>
                         Experience
@@ -94,6 +94,7 @@ export default function SkillsPage() {
                             <Typography variant="h4" component="h3" color="white" style={{ display: "inline" }}>New Balance</Typography>
                         </div>
                         <Typography variant="h5" component="h3" color="white" style={{ display: "inline" }}>Software Engineer</Typography>
+                        <Typography variant="body1" color="white" style={{ marginLeft: "1em", marginTop: ".25em" }}>- Currently in progress</Typography>
                     </Grid>
                     <Grid item xs={12} style={{ marginTop: "3em" }}>
                         <div style={{ display: "flex", alignItems: "center", borderTop: "1px solid #FFF", paddingTop: "1em" }}>
