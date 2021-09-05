@@ -12,7 +12,7 @@ import CardMedia from '@material-ui/core/CardMedia';
 import { Typography } from "@material-ui/core";
 
 // images
-import gitcProjectImage from "../assets/imgs/projects/gitc.JPG";
+import gitcProjectImage from "../assets/imgs/projects/gitc.PNG";
 import montanyeWeddingProjectImage from "../assets/imgs/projects/montanye-wedding.PNG";
 import ourLadysInnProjectImage from "../assets/imgs/projects/ourLadysInn.jpg";
 import thePalateSTLProjectImage from "../assets/imgs/projects/thePalateSTL.JPG";
