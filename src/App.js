@@ -1,5 +1,4 @@
 import React from "react";
-import PropTypes from "prop-types";
 import AppBar from "@material-ui/core/AppBar";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import Divider from "@material-ui/core/Divider";
@@ -8,6 +7,7 @@ import clsx from "clsx";
 import IconButton from "@material-ui/core/IconButton";
 import HomeIcon from '@material-ui/icons/Home';
 import LibraryBooks from "@material-ui/icons/LibraryBooks";
+import DesktopMacIcon from '@material-ui/icons/DesktopMac';
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
 import ListItemIcon from "@material-ui/core/ListItemIcon";
@@ -20,6 +20,7 @@ import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
 import { Switch, Route, Link, BrowserRouter, Redirect } from "react-router-dom";
 import HomePage from "./pages/homePage";
+import ProjectsPage from "./pages/projects";
 import GuidesPage from "./pages/guidesPage";
 import BecomeDeveloperGuide from "./pages/mockGuides/becomeDeveloperGuide";
 import ResumePage from "./pages/resumePage";
@@ -98,10 +99,10 @@ const useStyles = makeStyles(theme => ({
     color: "#222"
   }
 }));
+
 function App(props) {
   const { container } = props;
   const classes = useStyles();
-  // const theme = useTheme();
   const [open, setOpen] = React.useState(false);
 
   const scrollToTop = () => {
@@ -115,6 +116,10 @@ function App(props) {
 
   const handleDrawerClose = () => {
     setOpen(false);
+  };
+
+  const followLink = () => {
+    setOpen(false);
     scrollToTop();
   };
 
@@ -127,19 +132,20 @@ function App(props) {
       </div>
       <Divider />
       <List>
-        {["Home", "Resume", "Guides"].map((text, index) => (
+        {["Home", "Projects", "Resume", "Guides"].map((text, index) => (
           <ListItem
             key={text}
             component={Link}
             to={"/" + text.toLocaleLowerCase()}
             className={classes.neoNavLink}
-            onClick={handleDrawerClose}
+            onClick={followLink}
             aria-label={"Navigate to the " + text.toLocaleLowerCase() + " page"}
           >
             <ListItemIcon>
               {index === 0 ? <HomeIcon /> : <span></span>}
-              {index === 1 ? <AssignmentIndIcon /> : <span></span>}
-              {index === 2 ? <LibraryBooks /> : <span></span>}
+              {index === 1 ? <DesktopMacIcon /> : <span></span>}
+              {index === 2 ? <AssignmentIndIcon /> : <span></span>}
+              {index === 3 ? <LibraryBooks /> : <span></span>}
             </ListItemIcon>
             <ListItemText primary={text} />
           </ListItem>
@@ -173,7 +179,7 @@ function App(props) {
         </Toolbar>
       </AppBar>
       <BrowserRouter>
-        <nav className={classes.drawer} aria-label="mailbox folders">
+        <nav className={classes.drawer} aria-label="Navigation menu">
           <Drawer
             container={container}
             variant="persistent"
@@ -200,7 +206,7 @@ function App(props) {
           <div className={classes.toolbar} />
           <Switch>
             <Route exact path="/home" component={HomePage} />
-            {/* <Route path="/projects" component={HomePage} /> */}
+            <Route path="/projects" component={ProjectsPage} />
             <Route path="/guides/become-a-developer" component={BecomeDeveloperGuide} />
             <Route path="/guides" component={GuidesPage} />
             <Route path="/resume" component={ResumePage} />
@@ -211,15 +217,5 @@ function App(props) {
     </div>
   );
 }
-
-App.propTypes = {
-  /**
-   * Injected by the documentation to work in an iframe.
-   * You won't need it on your project.
-   */
-  container: PropTypes.instanceOf(
-    typeof Element === "undefined" ? Object : Element
-  )
-};
 
 export default App;

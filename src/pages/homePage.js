@@ -7,6 +7,7 @@ import { makeStyles } from "@material-ui/core/styles";
 
 // sections of this Page
 import BannerSection from "./homePageSections/banner.js";
+// import ProjectsSection from "./homePageSections/projects.js";
 import AdvertisementSection from "./homePageSections/advertisements.js";
 import ContactSection from "./homePageSections/contact.js";
 import Footer from "./footer";
@@ -22,6 +23,7 @@ export default function HomePage() {
     <div className={classes.containerFluid}>
       <div className={classes.main}>
         <BannerSection />
+        {/* <ProjectsSection /> */}
         <AdvertisementSection />
         <ContactSection />
         <Footer />

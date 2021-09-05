@@ -59,9 +59,9 @@ import RadioButtonUncheckedIcon from '@material-ui/icons/RadioButtonUnchecked';
 import SubjectIcon from '@material-ui/icons/Subject';
 
 // styles
-import homePageStyles from "../styles/homePageStyles";
+import resumeStyles from "../styles/resumeStyles";
 
-const useStyles = makeStyles(homePageStyles);
+const useStyles = makeStyles(resumeStyles);
 
 export default function SkillsPage() {
     const avatarSize = "75px";
@@ -69,7 +69,7 @@ export default function SkillsPage() {
     return (
         <div className={classes.containerFluid} style={{ textAlign: "center", marginTop: "2em", marginBottom: "2em" }}>
             <div className={classes.main} style={{ marginLeft: "2em", marginRight: "2em" }}>
-                <Typography variant="h3" color="white">Resume</Typography>
+                <Typography variant="h3" color="white" className={classes.gradientHeader}>Resume</Typography>
                 <Typography variant="body1" color="white" style={{ marginTop: "1em" }}><i>Currently only looking for small freelance projects outside of 8am-6pm schedule.</i></Typography>
                 <Typography style={{ marginTop: "2em" }}>
                     <Link href="#experience" color="white" style={{ marginRight: "1em", textDecoration: "underline" }}>

@@ -15,7 +15,7 @@ export default function GuidesIntroSection() {
 
   return (
     <div className={classes.container} style={{ textAlign: "center", marginTop: "4em", marginBottom: "2em" }}>
-      <Typography className={classes.guideHeader} variant="h3" color="white">Professional Guides</Typography>
+      <Typography className={classes.gradientHeader} variant="h3" color="white">Professional Guides</Typography>
       <Grid container spacing={1} style={{ marginTop: "2em", marginBottom: "2em" }}>
         <Grid item xs={12}>
           <p>

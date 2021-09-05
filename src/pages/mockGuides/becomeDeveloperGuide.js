@@ -44,7 +44,7 @@ export default function BecomeDeveloperGuide() {
                             </Breadcrumbs>
                         </Grid>
                         <Grid item xs={12}>
-                            <Typography color="white" variant="h3" style={{ marginTop: ".25em", marginBottom: ".25em" }}>
+                            <Typography color="white" variant="h3" style={{ marginTop: ".25em", marginBottom: ".25em" }} className={classes.gradientHeader}>
                                 Want to become a website developer?
                             </Typography>
                             <Typography color="white">
@@ -99,8 +99,8 @@ export default function BecomeDeveloperGuide() {
                                 <b>Must Haves</b>
                             </Typography>
                             <Typography gutterBottom variant="body1">
-                                - HTML5 
-                                <Link 
+                                - HTML5
+                                <Link
                                     href="https://www.w3schools.com/html/html_intro.asp"
                                     target="_blank"
                                     rel="noopener"
@@ -112,8 +112,8 @@ export default function BecomeDeveloperGuide() {
                                 </Link>
                             </Typography>
                             <Typography gutterBottom variant="body1">
-                                - CSS3 
-                                <Link 
+                                - CSS3
+                                <Link
                                     href="https://www.w3schools.com/css/css_intro.asp"
                                     target="_blank"
                                     rel="noopener"
@@ -125,8 +125,8 @@ export default function BecomeDeveloperGuide() {
                                 </Link>
                             </Typography>
                             <Typography gutterBottom variant="body1">
-                                - SASS 
-                                <Link 
+                                - SASS
+                                <Link
                                     href="https://sass-lang.com/guide"
                                     target="_blank"
                                     rel="noopener"
@@ -138,8 +138,8 @@ export default function BecomeDeveloperGuide() {
                                 </Link>
                             </Typography>
                             <Typography gutterBottom variant="body1">
-                                - Responsive Design 
-                                <Link 
+                                - Responsive Design
+                                <Link
                                     href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design"
                                     target="_blank"
                                     rel="noopener"
@@ -151,8 +151,8 @@ export default function BecomeDeveloperGuide() {
                                 </Link>
                             </Typography>
                             <Typography gutterBottom variant="body1">
-                                - JavaScript 
-                                <Link 
+                                - JavaScript
+                                <Link
                                     href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/A_first_splash"
                                     target="_blank"
                                     rel="noopener"
@@ -164,8 +164,8 @@ export default function BecomeDeveloperGuide() {
                                 </Link>
                             </Typography>
                             <Typography gutterBottom variant="body1">
-                                - Bootstrap 
-                                <Link 
+                                - Bootstrap
+                                <Link
                                     href="https://getbootstrap.com/docs/5.0/getting-started/introduction/"
                                     target="_blank"
                                     rel="noopener"
@@ -177,8 +177,8 @@ export default function BecomeDeveloperGuide() {
                                 </Link>
                             </Typography>
                             <Typography gutterBottom variant="body1">
-                                - Material Design 
-                                <Link 
+                                - Material Design
+                                <Link
                                     href="https://material.io/design/introduction"
                                     target="_blank"
                                     rel="noopener"
@@ -193,8 +193,8 @@ export default function BecomeDeveloperGuide() {
                                 <b>Nice to Haves</b>
                             </Typography>
                             <Typography gutterBottom variant="body1">
-                                - Agile Methodology 
-                                <Link 
+                                - Agile Methodology
+                                <Link
                                     href="https://medium.com/shecancode/an-introduction-to-agile-software-development-914339dcec66"
                                     target="_blank"
                                     rel="noopener"
@@ -206,8 +206,8 @@ export default function BecomeDeveloperGuide() {
                                 </Link>
                             </Typography>
                             <Typography gutterBottom variant="body1">
-                                - Git &amp; Version Control 
-                                <Link 
+                                - Git &amp; Version Control
+                                <Link
                                     href="https://www.atlassian.com/git/tutorials/what-is-version-control"
                                     target="_blank"
                                     rel="noopener"
@@ -219,8 +219,8 @@ export default function BecomeDeveloperGuide() {
                                 </Link>
                             </Typography>
                             <Typography gutterBottom variant="body1">
-                                - ReactJS 
-                                <Link 
+                                - ReactJS
+                                <Link
                                     href="https://reactjs.org/tutorial/tutorial.html"
                                     target="_blank"
                                     rel="noopener"
@@ -232,8 +232,8 @@ export default function BecomeDeveloperGuide() {
                                 </Link>
                             </Typography>
                             <Typography gutterBottom variant="body1">
-                                - Angular 
-                                <Link 
+                                - Angular
+                                <Link
                                     href="https://angular.io/guide/what-is-angular"
                                     target="_blank"
                                     rel="noopener"
@@ -246,7 +246,7 @@ export default function BecomeDeveloperGuide() {
                             </Typography>
                             <Typography gutterBottom variant="body1">
                                 - VueJS
-                                <Link 
+                                <Link
                                     href="https://vuejs.org/v2/guide/"
                                     target="_blank"
                                     rel="noopener"
@@ -258,8 +258,8 @@ export default function BecomeDeveloperGuide() {
                                 </Link>
                             </Typography>
                             <Typography gutterBottom variant="body1">
-                                - NPM &amp; Node.JS 
-                                <Link 
+                                - NPM &amp; Node.JS
+                                <Link
                                     href="https://docs.npmjs.com/downloading-and-installing-node-js-and-npm"
                                     target="_blank"
                                     rel="noopener"
@@ -274,7 +274,7 @@ export default function BecomeDeveloperGuide() {
                                 Must Have Books:
                             </Typography>
                             <Typography gutterBottom variant="body1">
-                                <Link 
+                                <Link
                                     href="https://www.amazon.com/Web-Design-HTML-JavaScript-jQuery/dp/1118907442/"
                                     target="_blank"
                                     rel="noopener"
@@ -286,7 +286,7 @@ export default function BecomeDeveloperGuide() {
                                 </Link>
                             </Typography>
                             <Typography gutterBottom variant="body1">
-                                <Link 
+                                <Link
                                     href="https://www.amazon.com/Pragmatic-Programmer-journey-mastery-Anniversary-dp-0135957052/dp/0135957052/"
                                     target="_blank"
                                     rel="noopener"
@@ -298,7 +298,7 @@ export default function BecomeDeveloperGuide() {
                                 </Link>
                             </Typography>
                             <Typography gutterBottom variant="body1">
-                                <Link 
+                                <Link
                                     href="https://www.scrum.org/resources/scrum-guide"
                                     target="_blank"
                                     rel="noopener"
@@ -316,7 +316,7 @@ export default function BecomeDeveloperGuide() {
                                 <b>Bootcamps</b>
                             </Typography>
                             <Typography gutterBottom variant="body1">
-                                <Link 
+                                <Link
                                     href="https://brainstation.io/course/online/remote-web-development-bootcamp"
                                     target="_blank"
                                     rel="noopener"
@@ -328,7 +328,7 @@ export default function BecomeDeveloperGuide() {
                                 </Link>
                             </Typography>
                             <Typography gutterBottom variant="body1">
-                                <Link 
+                                <Link
                                     href="https://www.thinkful.com/bootcamp/web-development/#introduction"
                                     target="_blank"
                                     rel="noopener"
@@ -343,7 +343,7 @@ export default function BecomeDeveloperGuide() {
                                 <b>Courses</b>
                             </Typography>
                             <Typography gutterBottom variant="body1">
-                                <Link 
+                                <Link
                                     href="https://javascript30.com/"
                                     target="_blank"
                                     rel="noopener"
@@ -355,7 +355,7 @@ export default function BecomeDeveloperGuide() {
                                 </Link>
                             </Typography>
                             <Typography gutterBottom variant="body1">
-                                <Link 
+                                <Link
                                     href="https://www.udemy.com/course/the-complete-javascript-course/"
                                     target="_blank"
                                     rel="noopener"

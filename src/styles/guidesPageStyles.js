@@ -1,20 +1,17 @@
 import {
     container,
-    containerFluid
+    containerFluid,
+    gradientHeader
 } from "./neomat/core.js";
 
 const guidesPageStyles = {
+    gradientHeader,
     main: {
         backgroundColor: "#222",
         color: "#FFF"
     },
     container,
     containerFluid,
-    guideHeader: {
-        backgroundImage: "linear-gradient(to right bottom, #ffffff, #f8f8f8, #f1f1f1, #ebebeb, #e4e4e4)",
-        WebkitBackgroundClip: "text",
-        WebkitTextFillColor: "transparent"
-    },
     accordionPrimaryHeader: {
         fontSize: "1rem",
         flexBasis: '33.33%',

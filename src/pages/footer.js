@@ -6,7 +6,6 @@ import Button from "@material-ui/core/Button";
 import Link from "@material-ui/core/Link";
 import Grid from '@material-ui/core/Grid';
 
-
 // Styles
 import footerStyles from "../styles/footerStyles.js";
 import { Email } from "@material-ui/icons";
