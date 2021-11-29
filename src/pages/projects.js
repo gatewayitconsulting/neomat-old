@@ -12,7 +12,6 @@ import CardMedia from '@material-ui/core/CardMedia';
 import { Typography } from "@material-ui/core";
 
 // images
-import gitcProjectImage from "../assets/imgs/projects/gitc.PNG";
 import montanyeWeddingProjectImage from "../assets/imgs/projects/montanye-wedding.PNG";
 import ourLadysInnProjectImage from "../assets/imgs/projects/ourLadysInn.jpg";
 import thePalateSTLProjectImage from "../assets/imgs/projects/thePalateSTL.JPG";
@@ -35,25 +34,7 @@ export default function ProjectsPage() {
                     <Grid item xs={12}>
                         <div>
                             <Card className={classes.root} style={{ marginTop: "1em", marginBottom: "1em" }}>
-                                <CardActionArea href={`guides/become-a-developer`}>
-                                    <CardMedia
-                                        className={classes.media}
-                                        image={gitcProjectImage}
-                                        title="Check out Gateway IT Consulting project"
-                                    />
-                                    <CardContent style={{ marginLeft: "1em", marginRight: "1em", textAlign: "center" }}>
-                                        <Typography gutterBottom variant="h5" component="h2">
-                                            Gateway IT Consulting
-                                        </Typography>
-                                    </CardContent>
-                                </CardActionArea>
-                            </Card>
-                        </div>
-                    </Grid>
-                    <Grid item xs={12}>
-                        <div>
-                            <Card className={classes.root} style={{ marginTop: "1em", marginBottom: "1em" }}>
-                                <CardActionArea href={`guides/become-a-developer`}>
+                                <CardActionArea href={`projects/montanye-wedding`}>
                                     <CardMedia
                                         className={classes.media}
                                         image={montanyeWeddingProjectImage}

@@ -21,6 +21,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import { Switch, Route, Link, BrowserRouter, Redirect } from "react-router-dom";
 import HomePage from "./pages/homePage";
 import ProjectsPage from "./pages/projects";
+import MontanyeWeddingProject from "./pages/mockProjects/montanyeWeddingProject";
 import GuidesPage from "./pages/guidesPage";
 import BecomeDeveloperGuide from "./pages/mockGuides/becomeDeveloperGuide";
 import ResumePage from "./pages/resumePage";
@@ -206,6 +207,7 @@ function App(props) {
           <div className={classes.toolbar} />
           <Switch>
             <Route exact path="/home" component={HomePage} />
+            <Route path="/projects/montanye-wedding" component={MontanyeWeddingProject} />
             <Route path="/projects" component={ProjectsPage} />
             <Route path="/guides/become-a-developer" component={BecomeDeveloperGuide} />
             <Route path="/guides" component={GuidesPage} />
